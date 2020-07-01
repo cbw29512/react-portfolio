@@ -14,5 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@iconify/icons-simple-icons": "^1.0.39",
+    "@iconify/react": "^1.1.3"
   }
 }

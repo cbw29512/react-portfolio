@@ -15,23 +15,27 @@ class Resume extends Component {
               <img
                 src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
                 alt="avatar"
-                style={{height: '200px'}}
+                style={{height: '250px'}}
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
+            <h2 style={{paddingTop: '2em'}}>Chris Wilson</h2>
+            <h4 style={{color: 'grey'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p>Seeking a position as a Full Stack Web Developer where I can solve
+problems, and provide end-to-end solutions from vision to a production
+ready experience. I bring a team oriented mindset, and mission ready
+drive to any project. My daily goal is to be prepared to develop services
+and functionality for use by web applications.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Address</h5>
-            <p>1 Hacker Way Menlo Park, 94025</p>
+            <p>per request</p>
             <h5>Phone</h5>
-            <p>(123) 456-7890</p>
+            <p>per request</p>
             <h5>Email</h5>
-            <p>someone@example.com</p>
-            <h5>Web</h5>
-            <p>mywebsite.com</p>
+            <p>divclass01@gmail.com</p>
+            <h5>References</h5>
+            <p>per request</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -39,52 +43,104 @@ class Resume extends Component {
 
 
             <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              startYear={2019}
+              endYear={2020}
+              schoolName="Kenzie Academy"
+              schoolDescription="Full Stack Web Developer 1 year Boot Camp"
                />
 
                <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                 startYear={2019}
+                 endYear={2020}
+                 schoolName="Free Code Camp"
+                 schoolDescription="Responsive Web Design Certification"
                   />
+
+                <Education
+                 startYear={2002}
+                 endYear={2002}
+                 schoolName="CompTIA"
+                 schoolDescription="A+ Hardware/Software Certification"
+                  />  
+
+                <Education
+                 startYear={1999}
+                 endYear={1999}
+                 schoolName="Department of Labor"
+                 schoolDescription="Apprenticeship Program for Machine Setup Operators"
+                  />   
+
+                <Education
+                 startYear={1999}
+                 endYear={1999}
+                 schoolName="North Eastern Technical College"
+                 schoolDescription="Associate degree Machine Tool Technology"
+                  />
+
                 <hr style={{borderTop: '3px solid #e22947'}} />
 
               <h2>Experience</h2>
 
             <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              
+              jobName="Truck Driver | Koch Bro., ARD, Schneider, Werner"
+              jobDescription="Route plan and safely navigate a semi-truck with various
+              equipment and freight. Ensured superior customer interaction and on-time delivery.
+              Ensured DOT compliance for the load."
               />
 
               <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                
+                jobName="Shop/Support Manager | Walmart, Edwards Wood Products"
+                jobDescription="Ensured workers followed company SOP.
+                Full time member of the new hire board and safety committee.
+                Trained, Counseled and Coached workers as needed."
                 />
+
+               <Experience
+              
+               jobName="Process Technician, QC | Aaroco, Schaeffler Group"
+               jobDescription="Operate precision measuring machine and equipment.
+               Assisted with updating SOP, paperwork compliance in a lean
+               manufacturing environment. Operated several machines in a manufacturing environment within
+               SOP and OSHA regulations."
+               />
+
+                <Experience
+                
+                jobName="Anti-Terrorist Adversary Team | Secuitas Security Services"
+                jobDescription="Weapons and tactics instructor for the Robinson Nuclear power
+                plant security force. Traveled as a team to four sites: SC, NC, GA, FL.
+                Member of the new hire board and safety committee.
+                Assisted in creating and writing SOP for security drills."
+                />
+              <Experience
+                jobName="Military | 31B / 11B SPC"
+                jobDescription="Honorable Discharge"
+                />
+
+              <Experience
+                jobName="SC State Guard | Drill Instructor SSG"
+                jobDescription="Vulunteer"
+                />    
+
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
               <Skills
-                skill="javascript"
-                progress={100}
+                skill="HTML/CSS"
+                progress={90}
                 />
                 <Skills
-                  skill="HTML/CSS"
-                  progress={80}
+                  skill="Javascript/Python"
+                  progress={70}
                   />
                   <Skills
-                    skill="NodeJS"
-                    progress={50}
+                    skill="React/Redux"
+                    progress={40}
                     />
                     <Skills
-                      skill="React"
-                      progress={25}
+                      skill="Django/PostgreSQL"
+                      progress={40}
                       />
 
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-
+import { Icon, InlineIcon } from '@iconify/react';
+import codewarsIcon from '@iconify/icons-simple-icons/codewars';
 
 class Landing extends Component {
   render() {
@@ -9,7 +10,7 @@ class Landing extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+              src="https://thumbs.dreamstime.com/z/developer-icon-element-profession-avatar-mobile-concept-web-apps-detailed-can-be-used-white-background-132593755.jpg"
               alt="avatar"
               className="avatar-img"
               />
@@ -19,28 +20,28 @@ class Landing extends Component {
 
             <hr/>
 
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+          <p>HTML | CSS | JavaScript | Python | React | Redux | Django | PostgreSQL | </p>
 
         <div className="social-links">
+        
+          {/* Linkiden */}
+          <a href="https://www.linkedin.com/in/cbwdivclass01" rel="noopener noreferrer" target="_blank">
+            <i className="fa fa-linkedin" aria-hidden="true" />
+          </a>
 
-          {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
+          {/* GitLab */}
+          <a href="http://gitlab.com/cbw29512" rel="noopener noreferrer" target="_blank">
+            <i className="fa fa-gitlab" aria-hidden="true" />
           </a>
 
           {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+          <a href="http://github.com/cbw29512" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-github-square" aria-hidden="true" />
           </a>
 
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
-
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
+          {/* Codewars */}
+          <a href="https://www.codewars.com/dashboard" rel="noopener noreferrer" target="_blank">
+          <Icon icon={codewarsIcon} width="66" aria-hidden="true" />
           </a>
 
         </div>

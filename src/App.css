@@ -110,7 +110,14 @@
 }
 
 .social-links i {
-  color: white;
   font-size: 5em;
-  padding: 8px;
+  padding: 0px 8px 0px 0px;
+}
+
+.underconstruction {
+  background: no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  height: 100%;
+  background-image: url(https://image.freepik.com/free-vector/caution-background_1361-951.jpg);
 }
