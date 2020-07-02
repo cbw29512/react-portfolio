@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { Icon, InlineIcon } from '@iconify/react';
-import codewarsIcon from '@iconify/icons-simple-icons/codewars';
+import codewarsIcon from '@iconify/icons-cib/codewars';
 
 class Landing extends Component {
   render() {
@@ -10,11 +10,11 @@ class Landing extends Component {
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
-              src="https://thumbs.dreamstime.com/z/developer-icon-element-profession-avatar-mobile-concept-web-apps-detailed-can-be-used-white-background-132593755.jpg"
+              src="https://image.shutterstock.com/image-vector/headshot-icon-vector-male-default-260nw-535853218.jpg"
               alt="avatar"
               className="avatar-img"
               />
-
+          <div><h1 className="landingpagetitle">Hello! My name is Chris.</h1></div> 
             <div className="banner-text">
               <h1>Full Stack Web Developer</h1>
 

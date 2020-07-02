@@ -13,7 +13,7 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src="https://image.shutterstock.com/image-vector/headshot-icon-vector-male-default-260nw-535853218.jpg"
                 alt="avatar"
                 style={{height: '250px'}}
                  />
@@ -21,13 +21,13 @@ class Resume extends Component {
 
             <h2 style={{paddingTop: '2em'}}>Chris Wilson</h2>
             <h4 style={{color: 'grey'}}>Full Stack Web Developer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <p>Seeking a position as a Full Stack Web Developer where I can solve
 problems, and provide end-to-end solutions from vision to a production
 ready experience. I bring a team oriented mindset, and mission ready
 drive to any project. My daily goal is to be prepared to develop services
 and functionality for use by web applications.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <h5>Address</h5>
             <p>per request</p>
             <h5>Phone</h5>
@@ -35,13 +35,39 @@ and functionality for use by web applications.</p>
             <h5>Email</h5>
             <p>divclass01@gmail.com</p>
             <h5>References</h5>
-            <p>per request</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <p>per request</p><br />
+            <hr style={{borderTop: '3px solid red', width: '100%'}}/>
+      
+              <h2>Skills</h2>
+              <Skills
+                skill="Computer Troubleshooting"
+                progress={100}
+                barnumber="100%"
+                />
+              <Skills
+                skill="HTML/CSS"
+                progress={90}
+                barnumber="90%"
+                />
+                <Skills
+                  skill="Javascript/Python"
+                  progress={70}
+                  barnumber="70%"
+                  />
+                  <Skills
+                    skill="React/Redux"
+                    progress={50}
+                    barnumber="50%"
+                    />
+                    <Skills
+                      skill="Django/PostgreSQL"
+                      progress={40}
+                      barnumber="40%"
+                      />
+
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
-
-
+            <h2>Education</h2>  
             <Education
               startYear={2019}
               endYear={2020}
@@ -118,32 +144,10 @@ and functionality for use by web applications.</p>
                 jobName="Military | 31B / 11B SPC"
                 jobDescription="Honorable Discharge"
                 />
-
               <Experience
                 jobName="SC State Guard | Drill Instructor SSG"
-                jobDescription="Vulunteer"
+                jobDescription="Volunteer"
                 />    
-
-              <hr style={{borderTop: '3px solid #e22947'}} />
-              <h2>Skills</h2>
-              <Skills
-                skill="HTML/CSS"
-                progress={90}
-                />
-                <Skills
-                  skill="Javascript/Python"
-                  progress={70}
-                  />
-                  <Skills
-                    skill="React/Redux"
-                    progress={40}
-                    />
-                    <Skills
-                      skill="Django/PostgreSQL"
-                      progress={40}
-                      />
-
-
           </Cell>
         </Grid>
       </div>

@@ -6,7 +6,7 @@ class About extends Component {
     return(
       <div class="underconstruction" >
         
-        <h1></h1>
+        <h1>Under Construction</h1>
       </div>
     )
   }
