@@ -9,6 +9,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
+  basename={optionalString}
+  forceRefresh={optionalBool}
+  getUserConfirmation={optionalFunc}
+  keyLength={optionalNumber}
 <App />
   </BrowserRouter>
   , document.getElementById('root'));
