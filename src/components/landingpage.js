@@ -20,7 +20,7 @@ class Landing extends Component {
 
             <hr/>
 
-          <p>HTML | CSS | JavaScript | Python | React | Redux | Django | PostgreSQL </p>
+          <p> HTML | CSS | JavaScript | Python | React | Redux | Django | PostgreSQL </p>
 
         <div className="social-links">
         
