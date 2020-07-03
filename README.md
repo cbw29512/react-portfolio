@@ -1,8 +1,8 @@
 # [YouTube Tutorial](https://www.youtube.com/playlist?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm)
-I created a Youtube code along tutorial for this project. Click the link above to view!
+Followes along with Youtube code along tutorial for this project. Click the link above to view!
 
 # react-portfolio-starter
-A React based personal portfolio app using create-react-app and React Router v4.
+A React based personal portfolio app using create-react-app, font awesome, React Router v4.
 
 # Tools
 * create-react-app cli
@@ -10,8 +10,6 @@ A React based personal portfolio app using create-react-app and React Router v4.
 * React Router v4
 
 # Start App
-Clone repo, install, cd into folder and run:
-```git
 npm install
 npm start
-```
+
