@@ -22,19 +22,20 @@ class Contact extends Component {
             <hr/>
             <div className="contact-list">
               <List>
-                <ListItem>
+              
+                {/* <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i className="fa fa-phone-square" aria-hidden="true"/>
                     Per Request
                   </ListItemContent>
-                </ListItem>
+                </ListItem> */}
 
-                <ListItem>
+                {/* <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i className="fa fa-fax" aria-hidden="true"/>
                     Per Request
                   </ListItemContent>
-                </ListItem>
+                </ListItem> */}
 
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>

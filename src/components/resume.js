@@ -4,21 +4,13 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
-
 class Resume extends Component {
   render() {
     return(
       <div>
         <Grid>
           <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
-              <img
-                src="https://image.shutterstock.com/image-vector/headshot-icon-vector-male-default-260nw-535853218.jpg"
-                alt="avatar"
-                style={{height: '250px'}}
-                 />
-            </div>
-
+            
             <h2 style={{paddingTop: '2em'}}>Chris Wilson</h2>
             <h4 style={{color: 'grey'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
@@ -64,6 +56,14 @@ and functionality for use by web applications.</p>
                       progress={40}
                       barnumber="40%"
                       />
+
+                <div style={{textAlign: 'center'}}>
+                <img
+                  src={require('./images/AplusLogoCertified.png')}
+                  alt="avatar"
+                  style={{height: '250px'}}
+                 />
+                z</div>
 
           </Cell>
           <Cell className="resume-right-col" col={8}>
