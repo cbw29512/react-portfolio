@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import mazerunner from './images/mazerunner.png'
-import sokoban from './images/sokoban.png'
-import halloween from './images/halloween.png'
-import ghostpost from './images/ghostpost.png'
-import bugtracker from './images/bugtracker.png'
-import twitterclone from './images/twitterclone.png'
+import mazerunner from './images/mazerunner.png';
+import sokoban from './images/sokoban.png';
+import halloween from './images/halloween.png';
+import ghostpost from './images/ghostpost.png';
+import bugtracker from './images/bugtracker.png';
+import twitterclone from './images/twitterclone.png';
 
 class Projects extends Component {
   constructor(props) {
