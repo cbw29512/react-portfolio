@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import { Icon } from '@iconify/react';
-import codewarsIcon from '@iconify/icons-cib/codewars';
+// import { Icon } from '@iconify/react';
+// import codewarsIcon from '@iconify/icons-cib/codewars';
 
 class Landing extends Component {
   render() {

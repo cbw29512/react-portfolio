@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import mazerunner from './images/mazerunner.png';
-import sokoban from './images/sokoban.png';
-import halloween from './images/halloween.png';
-import ghostpost from './images/ghostpost.png';
-import bugtracker from './images/bugtracker.png';
-import twitterclone from './images/twitterclone.png';
+
 
 class Projects extends Component {
   constructor(props) {
@@ -19,14 +14,14 @@ class Projects extends Component {
       return(
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${mazerunner}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top: '20px'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/Zb4ZKIH.png) center / cover`}} ></CardTitle>
             <CardText>
-              Javascript Maze Runner!
+              React Photo Wall!
             </CardText>
             <CardActions border>
-              <a href='https://gitlab.com/cbw29512/maze1' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-              <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+              <a href='https://gitlab.com/cbw29512/assessment---react-photo-wall' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+              <a href='https://i.imgur.com/Zb4ZKIH.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -34,14 +29,14 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${sokoban}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20px'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/LM49S65.png) center / cover`}} ></CardTitle>
             <CardText>
-              Javascript Sokoban!
+              React Twitter Feed!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://github.com/cbw29512/twitter-feed' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+            <a href='https://raw.githubusercontent.com/cbw29512/twitter-feed/master/ezgif.com-video-to-gif.gif' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -49,14 +44,14 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${halloween}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20px'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/IWeFmB0.png) center / cover`}} ></CardTitle>
             <CardText>
-              Halloween Coin Flip!
+              Kwitter (Twitter Clone)!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-            <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://gitlab.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+            <a href='https://ty914.gitlab.io/assessment---kwitter-frontend/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -70,14 +65,14 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${ghostpost}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/lLy1ufQ.png) center / cover`}} ></CardTitle>
             <CardText>
               Django App Ghost Post!
             </CardText>
             <CardActions border>
-              <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='www.google.com' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+              <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+              <a href='https://i.imgur.com/lLy1ufQ.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -85,14 +80,14 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${bugtracker}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWmR8T6.png) center / cover`}} ></CardTitle>
             <CardText>
               Django Bug Tracker!
             </CardText>
             <CardActions border>
-            <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+            <a href='https://i.imgur.com/FWmR8T6.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -100,14 +95,14 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${twitterclone}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWnJrSN.png) center / cover`}} ></CardTitle>
             <CardText>
-              Halloween Coin Flip!
+              Twitter Clone!
             </CardText>
             <CardActions border>
-            <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+            <a href='https://i.imgur.com/FWnJrSN.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -120,13 +115,13 @@ class Projects extends Component {
       
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${mazerunner}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/qbYP3Ex.png) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Maze Runner!
             </CardText>
             <CardActions border>
-              <a href='https://gitlab.com/cbw29512/maze1' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+              <a href='https://i.imgur.com/qbYP3Ex.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
               <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -135,13 +130,13 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${sokoban}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/EHhfo93.png) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Sokoban!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://i.imgur.com/EHhfo93.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
             <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -150,13 +145,13 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(${halloween}) center / cover`}} ></CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/AOFDEPe.png) center / cover`}} ></CardTitle>
             <CardText>
               Halloween Coin Flip!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://i.imgur.com/AOFDEPe.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
             <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>

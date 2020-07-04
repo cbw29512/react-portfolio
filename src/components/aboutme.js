@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
-
+import '../App.css'
 
 class About extends Component {
   render() {
     return(
-      <div class="underconstruction" >
-      </div>
+  
+      <div className="aboutmebg-container">
+        <img
+        className="aboutmebg" 
+        src={process.env.PUBLIC_URL+"https://i.imgur.com/CJbPo7W.jpg"} 
+        alt="aboutmebg"
+        />
+      </div>  
+    
     )
   }
 }

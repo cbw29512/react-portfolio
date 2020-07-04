@@ -53,17 +53,17 @@ and functionality for use by web applications.</p>
                     />
                     <Skills
                       skill="Django/PostgreSQL"
-                      progress={40}
-                      barnumber="40%"
+                      progress={50}
+                      barnumber="50%"
                       />
 
                 <div style={{textAlign: 'center'}}>
                 <img
-                  src={require('./images/AplusLogoCertified.png')}
+                  src='https://i.imgur.com/Z4LrLXQ.jpg'
                   alt="avatar"
                   style={{height: '250px'}}
                  />
-                z</div>
+                </div>
 
           </Cell>
           <Cell className="resume-right-col" col={8}>
@@ -90,15 +90,15 @@ and functionality for use by web applications.</p>
                   />  
 
                 <Education
-                 startYear={1999}
-                 endYear={1999}
+                 startYear={2000}
+                 endYear={1995}
                  schoolName="Department of Labor"
                  schoolDescription="Apprenticeship Program for Machine Setup Operators"
                   />   
 
                 <Education
-                 startYear={1999}
-                 endYear={1999}
+                 startYear={1995}
+                 endYear={1997}
                  schoolName="North Eastern Technical College"
                  schoolDescription="Associate degree Machine Tool Technology"
                   />
