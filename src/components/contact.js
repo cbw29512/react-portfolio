@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import aplus from './images/AplusLogoCertified.png'
+// import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+// import aplus from './images/AplusLogoCertified.png'
 
 class Contact extends Component {
   render() {
@@ -18,7 +18,7 @@ class Contact extends Component {
 
           </Cell> */}
           {/* <Cell col={8}> */}
-            <h2 classname='contactmeh2'>Contact Me</h2>
+            <h1 classname='contactmeh2'>Contact Me</h1>
             
             <hr/>
 
@@ -28,7 +28,7 @@ class Contact extends Component {
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
 
-                  <a href ="mailto:divclass01@gmail.com" target="_blank">
+                  <a href ="mailto:divclass01@gmail.com" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-envelope" aria-hidden="true"/>
                   </a>
                   <h4>E-mail</h4>
@@ -40,7 +40,7 @@ class Contact extends Component {
               <div className="contact-icon">
                 {/* <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
-                  <a href ="https://us02web.zoom.us/j/4217775819" target="_blank">
+                  <a href ="https://us02web.zoom.us/j/4217775819" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa fa-search" aria-hidden="true"/>
                     </a>
                     <h4>Zoom</h4>
@@ -49,7 +49,7 @@ class Contact extends Component {
               <div className="contact-icon">
                 {/* <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
-                  <a href ="https://calendly.com/divclass01/60min" target="_blank">
+                  <a href ="https://calendly.com/divclass01/60min" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-calendar" aria-hidden="true"/>
                     </a>
                     <h4>Appointment</h4>

@@ -11,7 +11,7 @@ class Resume extends Component {
         <Grid>
           <Cell col={4}>
             
-            <h2 style={{paddingTop: '2em'}}>Chris Wilson</h2>
+            <h2 style={{paddingTop: '1em'}}>Chris Wilson</h2>
             <h4 style={{color: 'grey'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <p>Seeking a position as a Full Stack Web Developer where I can solve
@@ -67,7 +67,7 @@ and functionality for use by web applications.</p>
 
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>  
+            <h2 style={{paddingTop: '1em'}}>Education</h2>  
             <Education
               startYear={2019}
               endYear={2020}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import codewarsIcon from '@iconify/icons-cib/codewars';
 
 class Landing extends Component {
@@ -38,11 +38,11 @@ class Landing extends Component {
           <a href="http://github.com/cbw29512" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-github-square" aria-hidden="true" />
           </a>
-
-          {/* Codewars */}
+{/* 
+          Codewars
           <a href="https://www.codewars.com/dashboard" rel="noopener noreferrer" target="_blank">
           <Icon icon={codewarsIcon} width="66" aria-hidden="true" />
-          </a>
+          </a> */}
 
         </div>
             </div>

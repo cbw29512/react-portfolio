@@ -19,7 +19,7 @@ class Projects extends Component {
       return(
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${mazerunner}) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Maze Runner!
@@ -34,7 +34,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${sokoban}) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Sokoban!
@@ -49,7 +49,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${halloween}) center / cover`}} ></CardTitle>
             <CardText>
               Halloween Coin Flip!
@@ -70,7 +70,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${ghostpost}) center / cover`}} ></CardTitle>
             <CardText>
               Django App Ghost Post!
@@ -85,7 +85,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${bugtracker}) center / cover`}} ></CardTitle>
             <CardText>
               Django Bug Tracker!
@@ -100,7 +100,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${twitterclone}) center / cover`}} ></CardTitle>
             <CardText>
               Halloween Coin Flip!
@@ -120,7 +120,7 @@ class Projects extends Component {
       
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${mazerunner}) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Maze Runner!
@@ -135,7 +135,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${sokoban}) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Sokoban!
@@ -150,7 +150,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{margin: '12px', minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${halloween}) center / cover`}} ></CardTitle>
             <CardText>
               Halloween Coin Flip!
