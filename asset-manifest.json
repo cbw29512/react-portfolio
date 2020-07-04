@@ -1,13 +1,7 @@
 {
   "main.css": "static/css/main.d1e757eb.css",
   "main.css.map": "static/css/main.d1e757eb.css.map",
-  "main.js": "static/js/main.aca7e363.js",
-  "main.js.map": "static/js/main.aca7e363.js.map",
-  "static/media/AplusLogoCertified.png": "static/media/AplusLogoCertified.9041d8d2.png",
-  "static/media/bugtracker.png": "static/media/bugtracker.fa54cd63.png",
-  "static/media/ghostpost.png": "static/media/ghostpost.c6c01897.png",
-  "static/media/halloween.png": "static/media/halloween.5495f5c6.png",
-  "static/media/mazerunner.png": "static/media/mazerunner.6888d0d4.png",
-  "static/media/sokoban.png": "static/media/sokoban.89857f52.png",
-  "static/media/twitterclone.png": "static/media/twitterclone.5e6b8ea0.png"
+  "main.js": "static/js/main.3591140d.js",
+  "main.js.map": "static/js/main.3591140d.js.map",
+  "static/media/AplusLogoCertified.png": "static/media/AplusLogoCertified.9041d8d2.png"
 }
