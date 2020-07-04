@@ -6,54 +6,62 @@ class Contact extends Component {
   render() {
     return(
       <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={2}>
-            {/* <h2>Chris Wilson</h2>
+        {/* <Grid className="contact-grid"> */}
+          {/* <Cell col={2}>
+            <h2>Chris Wilson</h2>
             <img
               alt="avatar"
               src="https://clipartart.com/images/professional-icon-clipart-1.jpg" 
               style={{height: '100px'}}
                />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}></p> */}
+             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}></p>
 
-          </Cell>
-          <Cell col={8}>
-            <h2>Contact Me</h2>
+          </Cell> */}
+          {/* <Cell col={8}> */}
+            <h2 classname='contactmeh2'>Contact Me</h2>
+            
             <hr/>
-            <div className="contact-list">
-              <List>
-              
-                {/* <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
-                    Per Request
-                  </ListItemContent>
-                </ListItem> */}
 
-                {/* <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    Per Request
-                  </ListItemContent>
-                </ListItem> */}
-
+            <div className="contact-icon-container">
+            <div className="contact-icon">
+              {/* <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
+
+                  <a href ="mailto:divclass01@gmail.com" target="_blank">
                     <i className="fa fa-envelope" aria-hidden="true"/>
-                    divclass01@gmail.com
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
+                  </a>
+                  <h4>E-mail</h4>
+                    {/* </ListItemContent>
+                </ListItem> */}
+              
+              </div>  
+              
+              <div className="contact-icon">
+                {/* <ListItem>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
+                  <a href ="https://us02web.zoom.us/j/4217775819" target="_blank">
                     <i className="fa fa fa-search" aria-hidden="true"/>
-                    https://us02web.zoom.us/j/4217775819
-                  </ListItemContent>
+                    </a>
+                    <h4>Zoom</h4>
+              </div>
+                  
+              <div className="contact-icon">
+                {/* <ListItem>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
+                  <a href ="https://calendly.com/divclass01/60min" target="_blank">
+                    <i className="fa fa-calendar" aria-hidden="true"/>
+                    </a>
+                    <h4>Appointment</h4>
+              </div>
+                
+                  {/* </ListItemContent>
                 </ListItem>
-              </List>
+              </List> */}
+              {/* <p>https://us02web.zoom.us/j/4217775819</p> */}
             </div>
-          </Cell>
-        </Grid>
+          {/* </Cell>
+        </Grid> */}
       </div>
     )
   }
