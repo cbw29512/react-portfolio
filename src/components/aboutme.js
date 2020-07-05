@@ -7,12 +7,20 @@ class About extends Component {
   
       <div className="aboutmebg-container">
         <img
-        className="aboutmebg" 
-        src={process.env.PUBLIC_URL+"https://i.imgur.com/CJbPo7W.jpg"} 
-        alt="aboutmebg"
+        className="aboutmebg"
+        src='https://i.imgur.com/CJbPo7W.jpg' 
+        alt="Under Construction"
         />
       </div>  
     
+      // <div style={{textAlign: 'center'}}>
+      //   <img
+      //   src='https://i.imgur.com/Z4LrLXQ.jpg'
+      //   alt="avatar"
+      //   style={{height: '250px'}}
+      // />
+
+    // </div>
     )
   }
 }
