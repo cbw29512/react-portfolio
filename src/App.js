@@ -16,7 +16,7 @@ class App extends Component {
                 <Link to="/projects">Projects</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/aboutme">About Me</Link>
+                {/* <Link to="/aboutme">About Me</Link> */}
             </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Home Page</Link>}>
@@ -24,7 +24,7 @@ class App extends Component {
               <Link to="/projects">Projects</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/contact">Contact</Link>
-              <Link to="/aboutme">About Me</Link>
+              {/* <Link to="/aboutme">About Me</Link> */}
             </Navigation>
         </Drawer>
         <Content>
