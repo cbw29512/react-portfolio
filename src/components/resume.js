@@ -20,14 +20,39 @@ ready experience. I bring a team oriented mindset, and mission ready
 drive to any project. My daily goal is to be prepared to develop services
 and functionality for use by web applications.</p>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
-            <h5>Address</h5>
-            <p>per request</p>
-            <h5>Phone</h5>
-            <p>per request</p>
-            <h5>Email</h5>
-            <p>divclass01@gmail.com</p>
-            <h5>References</h5>
-            <p>per request</p><br />
+            <h2>Certifications</h2>
+            <Education
+              startYear={2019}
+              endYear={2020}
+              schoolName="Kenzie Academy"
+              schoolDescription="Full Stack Web Developer"
+               />
+
+               <Education
+                 startYear={2019}
+                 endYear={2020}
+                 schoolName="Free Code Camp"
+                 schoolDescription="Responsive Web Design"
+                  />
+
+                <Education
+                 startYear={2002}
+
+                 schoolName="CompTIA"
+                 schoolDescription="A+ Hardware/Software Certification"
+                  /> 
+
+                <div style={{textAlign: 'center', cursor:'pointer'}}>
+                  <a href="https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url">
+                  <img
+                    src='https://i.imgur.com/Z4LrLXQ.jpg'
+                    alt="avatar"
+                    style={{height: '250px'}}
+                  />
+                  </a> <p style={{fontSize:'18px'}}>Click to Verify!</p>
+                  </div>
+
+            <br />
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
       
               <h2>Skills</h2>
@@ -57,48 +82,20 @@ and functionality for use by web applications.</p>
                       barnumber="50%"
                       />
 
-                <div style={{textAlign: 'center'}}>
-                <img
-                  src='https://i.imgur.com/Z4LrLXQ.jpg'
-                  alt="avatar"
-                  style={{height: '250px'}}
-                 />
-                </div>
-
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2 style={{paddingTop: '1em'}}>Education</h2>  
-            <Education
-              startYear={2019}
-              endYear={2020}
-              schoolName="Kenzie Academy"
-              schoolDescription="Full Stack Web Developer 1 year Boot Camp"
-               />
-
-               <Education
-                 startYear={2019}
-                 endYear={2020}
-                 schoolName="Free Code Camp"
-                 schoolDescription="Responsive Web Design Certification"
-                  />
-
+    
                 <Education
-                 startYear={2002}
-                 endYear={2002}
-                 schoolName="CompTIA"
-                 schoolDescription="A+ Hardware/Software Certification"
-                  />  
-
-                <Education
-                 startYear={2000}
-                 endYear={1995}
+                 startYear={1995}
+                 endYear={2000}
                  schoolName="Department of Labor"
                  schoolDescription="Apprenticeship Program for Machine Setup Operators"
                   />   
 
                 <Education
                  startYear={1995}
-                 endYear={1997}
+                 endYear={1998}
                  schoolName="North Eastern Technical College"
                  schoolDescription="Associate degree Machine Tool Technology"
                   />

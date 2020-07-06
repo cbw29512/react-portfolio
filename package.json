@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
+    "jquery-awesome-cursor": "^0.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.13.1",
     "react-mdl": "^1.11.0",

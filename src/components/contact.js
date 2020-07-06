@@ -23,6 +23,16 @@ class Contact extends Component {
             <hr/>
 
             <div className="contact-icon-container">
+
+            <div className="contact-icon">
+                {/* <ListItem>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
+                  <a href ="https://calendly.com/divclass01/60min" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-calendar" aria-hidden="true"/>
+                    </a>
+                    <h4>Appointment</h4>
+              </div>
+
             <div className="contact-icon">
               {/* <List>
                 <ListItem>
@@ -44,15 +54,6 @@ class Contact extends Component {
                     <i className="fa fa fa-search" aria-hidden="true"/>
                     </a>
                     <h4>Zoom</h4>
-              </div>
-                  
-              <div className="contact-icon">
-                {/* <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}> */}
-                  <a href ="https://calendly.com/divclass01/60min" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-calendar" aria-hidden="true"/>
-                    </a>
-                    <h4>Appointment</h4>
               </div>
                 
                   {/* </ListItemContent>

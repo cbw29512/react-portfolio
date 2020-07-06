@@ -22,10 +22,29 @@
   overflow: scroll;
 }
 
-.landingpagetitle {
+h1.landingpage-title {
   color: whitesmoke;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5vw;
 }
+
+/* div.mdl-layout__content {
+  background-color: lightblue;
+  background-size: contain;
+  background-position:top;
+  background: cover;
+  min-height: 100%;
+}  */
+
+
+
+/* .projectbg {
+  background-color: lightskyblue;
+  background-size: contain;
+  background-position:top;
+  background: cover;
+  min-height: 100%;
+} */
 
 .projects-grid {
   display: flex;
@@ -37,6 +56,10 @@
   background: #27221F;
   color: whitesmoke;
   padding: 2em;
+}
+
+div.mdl-grid {
+  text-align: left;
 }
 
 /* contact page css */
@@ -88,10 +111,12 @@
 
 /* contact page css */
 
-.avatar-img {
-  height: 300px;
+img.avatar-img {
+  width: width;
   border-radius: 50%;
-  margin-top: 5rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1%;
 }
 
 .banner-text {
@@ -124,15 +149,21 @@
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   align-self: center;
+  position: relative;
 }
+
+.landingpage-links {
+  text-decoration: underline;
+} 
 
 .social-links i {
   font-size: 4em;
   color: whitesmoke;
   align-self: center;
   margin: 5px 5px 5px 5px;
+  flex-direction: column;
 }
 
 .resumebars {

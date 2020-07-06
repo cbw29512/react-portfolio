@@ -12,6 +12,7 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
+        <div className="projectbg">
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto', top: '20px'}}>
@@ -21,7 +22,7 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
               <a href='https://gitlab.com/cbw29512/assessment---react-photo-wall' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-              <a href='https://i.imgur.com/Zb4ZKIH.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
+              <a href='https://i.imgur.com/Zb4ZKIH.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -50,7 +51,7 @@ class Projects extends Component {
               Kwitter (Twitter Clone)!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+            <a href='https://gitlab.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>Gitlab</Button></a>
             <a href='https://ty914.gitlab.io/assessment---kwitter-frontend/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -58,7 +59,7 @@ class Projects extends Component {
             </CardMenu>
           </Card>
         </div>
-
+      </div>
 
       )
     } else if(this.state.activeTab === 1) {
@@ -72,7 +73,7 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
               <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
-              <a href='https://i.imgur.com/lLy1ufQ.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
+              <a href='https://i.imgur.com/lLy1ufQ.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -87,7 +88,7 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
             <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
-            <a href='https://i.imgur.com/FWmR8T6.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
+            <a href='https://i.imgur.com/FWmR8T6.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -102,7 +103,7 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
             <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
-            <a href='https://i.imgur.com/FWnJrSN.png' target="_blank" rel="noopener noreferrer"><Button colored>Demo</Button></a>
+            <a href='https://i.imgur.com/FWnJrSN.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -121,8 +122,8 @@ class Projects extends Component {
               Javascript Maze Runner!
             </CardText>
             <CardActions border>
-              <a href='https://i.imgur.com/qbYP3Ex.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-              <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+              <a href='https://gitlab.com/cbw29512/maze1' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+              <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -136,8 +137,8 @@ class Projects extends Component {
               Javascript Sokoban!
             </CardText>
             <CardActions border>
-            <a href='https://i.imgur.com/EHhfo93.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://gitlab.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -151,15 +152,15 @@ class Projects extends Component {
               Halloween Coin Flip!
             </CardText>
             <CardActions border>
-            <a href='https://i.imgur.com/AOFDEPe.png' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-            <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
+            <a href='https://gitlab.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
         </div>
-
+      
       )
     } else if(this.state.activeTab === 3) {
       return (
