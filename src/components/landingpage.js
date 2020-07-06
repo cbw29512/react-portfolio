@@ -12,7 +12,7 @@ class Landing extends Component {
             
           <div><h1 className="landingpage-title">Hello! My name is Chris Wilson.</h1></div> 
           <img
-              src="https://image.shutterstock.com/image-vector/headshot-icon-vector-male-default-260nw-535853218.jpg"
+              src="https://i.imgur.com/2yrb3Gq.gif"
               alt="avatar"
               className="avatar-img"
             />
