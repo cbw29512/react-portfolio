@@ -133,13 +133,13 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
-          <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/NHqwXis.png) center / cover`}} ></CardTitle>
+          <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/pThRImZ.png) center / cover`}} ></CardTitle>
             <CardText>
-              Weather App!
+              Magic 8 Ball!
             </CardText>
             <CardActions border>
-              <a href='https://github.com/cbw29512/weather_app' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='http://cbw29512.github.io/weather_app' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
+              <a href='https://gitlab.com/cbw29512/magic8ball' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+              <a href='https://cbw29512.gitlab.io/magic8ball/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />

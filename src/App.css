@@ -5,8 +5,8 @@
   top: 0;
   position: -webkit-sticky; /* Safari */
   background: #a9a9a9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #808080, #a9a9a9, #808080 );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #808080, #a9a9a9, #808080 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right,  #73C2FB, lightblue, #73C2FB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #73C2FB, lightblue, #73C2FB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -26,9 +26,9 @@ div.mdl-layout__drawer-button > i {
 } */
 
 .landing-grid {
-  background: #004e92;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #002955, #004e92, #002955);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #002955, #004e92, #002955); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: dodgerblue;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #73C2FB, lightblue, #73C2FB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #73C2FB, lightblue, #73C2FB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
   top: 0;
@@ -49,21 +49,15 @@ Tabs {
 }
 
 div.mdl-layout__content {
-  background-color: lightblue;
+  background: dodgerblue;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #73C2FB, lightblue, #73C2FB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #73C2FB, lightblue, #73C2FB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: contain;
   background-position:top;
   background: cover;
   min-height: 100%;
   z-index: 0;
 } 
-
-/* .projectbg {
-  background-color: lightskyblue;
-  background-size: contain;
-  background-position:top;
-  background: cover;
-  min-height: 100%;
-} */
 
 .projects-grid {
   display: flex;
@@ -77,15 +71,10 @@ div.mdl-layout__content {
   padding: 2em;
 }
 
-/* div.mdl-grid {
-  text-align: left;
-} */
-
 /* contact page css */
 
 .contact-body {
   padding-top: 2em;
-  background-color: whitesmoke;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -100,6 +89,25 @@ div.mdl-layout__content {
 .contact-icon {
   font-size: 6em;
 }
+
+.social-links {
+  display: flex;
+}
+
+.icon-gitlab {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  
+}
+
+.icon-github {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex: 2;
+}
+
 
 /* contact page css */
 
@@ -160,6 +168,12 @@ img.avatar-img {
 
 .resumebars {
   flex-direction: column;
+}
+
+div.resume-bg {
+  background: dodgerblue;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #73C2FB, lightblue, #73C2FB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #73C2FB, lightblue, #73C2FB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 div.skills {

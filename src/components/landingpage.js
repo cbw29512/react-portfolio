@@ -9,7 +9,7 @@ class Landing extends Component {
         <Grid className="landing-grid"style={{overflowY: 'scroll'}}>
           <Cell col={12}>
             
-          <div><h1 className="landingpage-title">Hello!</h1></div> 
+          <div><h1 className="landingpage-title"></h1></div> 
           
           <div className="application">
             <Helmet>
@@ -19,13 +19,13 @@ class Landing extends Component {
             </Helmet>
           </div>
           
-          <div 
+          <div
           class="LI-profile-badge"  
           data-version="v1" 
           data-size="large" 
           data-locale="en_US" 
           data-type="horizontal" 
-          data-theme="dark" 
+          data-theme="light" 
           data-vanity="cbwdivclass01">
           <a class="LI-simple-link" href='https://www.linkedin.com/in/cbwdivclass01?trk=profile-badge'>Chris Wilson</a></div>
 
@@ -34,6 +34,7 @@ class Landing extends Component {
               alt="avatar"
               className="avatar-img"
             /> */}
+            
             <div className="banner-text">
               <h1>Full Stack Web Developer</h1>
 
@@ -43,18 +44,17 @@ class Landing extends Component {
 
         <div className="social-links">
         
-          
-            <div>
-            {/* Linkiden */}  
+            {/* <div>
+             
             <a href="https://www.linkedin.com/in/cbwdivclass01" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-linkedin" aria-hidden="true" />
             </a>
             <a href="https://www.linkedin.com/in/cbwdivclass01" rel="noopener noreferrer" target="_blank">
             <p className="landingpage-links">Linkedin</p>
             </a>
-            </div>
+            </div> */}
           
-            <div>
+            <div className="icon-gitlab">
             {/* GitLab */}
             <a href="http://gitlab.com/cbw29512" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-gitlab" aria-hidden="true" />
@@ -66,7 +66,7 @@ class Landing extends Component {
           
             <div>
             {/* Github */}
-            <a href="http://github.com/cbw29512" rel="noopener noreferrer" target="_blank">
+            <a className="icon-github"href="http://github.com/cbw29512" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-github-square" aria-hidden="true" />
             </a>
             <a href="http://github.com/cbw29512" rel="noopener noreferrer" target="_blank">
@@ -75,17 +75,14 @@ class Landing extends Component {
             </div>
 
             <div>  
-            {/* Codewars */}
-            <a href="https://www.codewars.com/users/cbw29512" rel="noopener noreferrer" target="_blank">
+            
+            {/* <a href="https://www.codewars.com/users/cbw29512" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-code" aria-hidden="true" />
             </a>
             <a href="" rel="noopener noreferrer" target="_blank">
             <p className="landingpage-links">CodeWars</p>
-            </a>
-            <div>
+            </a> */}
             
-            
-              </div>
             </div>
           </div>
           </div>  

@@ -10,12 +10,12 @@ class Resume extends Component {
   render() {
     return(
       
-      <div>
+      <div className="resume-bg">
         <Grid>
           <Cell col={4}>
             
-            <h2 style={{paddingTop: '1em'}}>Chris Wilson</h2>
-            <h4 style={{color: 'grey'}}>Full Stack Web Developer</h4>
+            <h2 style={{color:'black', paddingTop: '1em'}}>Chris Wilson</h2>
+            <h4 style={{color: 'black'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <p>Seeking a position as a Full Stack Web Developer where I can solve
 problems, and provide end-to-end solutions from vision to a production
