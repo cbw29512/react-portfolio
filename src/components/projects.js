@@ -116,6 +116,7 @@ class Projects extends Component {
       
         <div className="projects-grid">
           {/* Project 1 */}
+          
           <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/qbYP3Ex.png) center / cover`}} ></CardTitle>
             <CardText>
@@ -132,13 +133,13 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/EHhfo93.png) center / cover`}} ></CardTitle>
+          <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/NHqwXis.png) center / cover`}} ></CardTitle>
             <CardText>
-              Javascript Sokoban!
+              Weather App!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
-            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
+              <a href='https://github.com/cbw29512/weather_app' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+              <a href='http://cbw29512.github.io/weather_app' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -159,12 +160,61 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+        
         </div>
       
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>Personal</h1></div>
+
+        <div className="projects-grid">
+          {/* Project 1 */}
+            
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/EHhfo93.png) center / cover`}} ></CardTitle>
+            <CardText>
+              Javascript Sokoban!
+            </CardText>
+            <CardActions border>
+            <a href='https://gitlab.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/eGWcJbj.png) center / cover`}} ></CardTitle>
+            <CardText>
+              Tower Of Hanoi!
+            </CardText>
+            <CardActions border>
+            <a href='https://gitlab.com/cbw29512/towerofhanoi/pages' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://cbw29512.gitlab.io/towerofhanoi/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 3 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/oyWMAZC.png) center / cover`}} ></CardTitle>
+            <CardText>
+              Connect Four
+            </CardText>
+            <CardActions border>
+            <a href='https://gitlab.com/cbw29512/connectfour' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://cbw29512.gitlab.io/connectfour/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>     
+        
       )
     }
 
@@ -177,7 +227,7 @@ class Projects extends Component {
           <Tab>React</Tab>
           <Tab>Django</Tab>
           <Tab>Javascript</Tab>
-          <Tab>Personal</Tab>
+          <Tab>Games</Tab>
         </Tabs>
 
 

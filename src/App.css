@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
 .header-color {
-  position: sticky;
+  z-index: 10;
   top: 0;
   position: -webkit-sticky; /* Safari */
   background: #a9a9a9;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #808080, #a9a9a9, #808080 );  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #808080, #a9a9a9, #808080 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+header {
+  position: sticky;
+}
+
+/* div.mdl-layout__drawer-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+div.mdl-layout__drawer-button > i {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem;
+} */
 
 .landing-grid {
   background: #004e92;  /* fallback for old browsers */
@@ -28,15 +44,18 @@ h1.landingpage-title {
   margin-top: 5vw;
 }
 
-/* div.mdl-layout__content {
+Tabs {
+  z-index: 10;
+}
+
+div.mdl-layout__content {
   background-color: lightblue;
   background-size: contain;
   background-position:top;
   background: cover;
   min-height: 100%;
-}  */
-
-
+  z-index: 0;
+} 
 
 /* .projectbg {
   background-color: lightskyblue;
@@ -81,33 +100,6 @@ h1.landingpage-title {
 .contact-icon {
   font-size: 6em;
 }
-
-/* .contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.contact-grid h2 {
-  font-family: 'Anton', sans-serif;
-}
-
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-  flex: flex;
-} */
-
-/* .contact-grid hr {
-  border-top: 5px dotted black;
-  width: 80%;
-  margin: auto;
-  flex: column;
-} */
 
 /* contact page css */
 
@@ -189,4 +181,28 @@ img.aboutmebg {
   max-width: 100%;
   height: 100%;
   vertical-align: middle;
+}
+
+div.contact-icon {
+  margin-top: 2vw;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
