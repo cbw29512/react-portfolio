@@ -108,7 +108,6 @@ div.mdl-layout__content {
   flex: 2;
 }
 
-
 /* contact page css */
 
 img.avatar-img {
@@ -201,6 +200,7 @@ div.contact-icon {
   margin-top: 2vw;
 }
 
+/* linkedin card */
 div.LI-footer.LI-row > a {
   float: left;
 }
