@@ -18,10 +18,10 @@ class Resume extends Component {
             <h4 style={{color: 'black'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <p>Seeking a position as a Full Stack Web Developer where I can solve
-problems, and provide end-to-end solutions from vision to a production
-ready experience. I bring a team oriented mindset, and mission ready
-drive to any project. My daily goal is to be prepared to develop services
-and functionality for use by web applications.</p>
+                problems, and provide end-to-end solutions from vision to a production
+                ready experience. I bring a team oriented mindset, and mission ready
+                drive to any project. My daily goal is to be prepared to develop services
+                and functionality for use by web applications.</p>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
             <h2>Certifications</h2>
             <Education
@@ -65,7 +65,7 @@ and functionality for use by web applications.</p>
                 barnumber="100%"
                 />
               <Skills
-                skill="HTML/CSS"
+                skill="HTML/CSS/GIT"
                 progress={90}
                 barnumber="90%"
                 />
@@ -140,6 +140,7 @@ and functionality for use by web applications.</p>
                 Member of the new hire board and safety committee.
                 Assisted in creating and writing SOP for security drills."
                 />
+                <h1>Military Experience</h1>
               <Experience
                 jobName="Military | 31B / 11B SPC"
                 jobDescription="Honorable Discharge"

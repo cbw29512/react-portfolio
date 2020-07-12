@@ -5,7 +5,7 @@ class Skills extends Component {
   render() {
     return(
       <Grid>
-        <div className='resumebars'>
+        <div className='resume-bars'>
         <Cell col={12} >
           <div className="skills">{this.props.skill}</div> 
           <ProgressBar style={{margin: 'left', width: '100px'}} progress={this.props.progress} />
