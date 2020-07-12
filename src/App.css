@@ -201,3 +201,6 @@ div.contact-icon {
   margin-top: 2vw;
 }
 
+div.LI-footer.LI-row > a {
+  float: left;
+}
