@@ -8,8 +8,6 @@ class Contact extends Component {
         
             <h1 classname='contactmeh2'>Contact Me</h1>
             
-            <hr/>
-
             <div className="contact-icon-container">
 
             <div className="contact-icon">

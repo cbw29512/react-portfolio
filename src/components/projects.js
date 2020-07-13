@@ -14,8 +14,9 @@ class Projects extends Component {
       return(
         <div className="project-bg">
         <div className="projects-grid">
+
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top: '20px'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/Zb4ZKIH.png) center / cover`}} ></CardTitle>
             <CardText>
               React Photo Wall!
@@ -30,7 +31,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20px'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/LM49S65.png) center / cover`}} ></CardTitle>
             <CardText>
               React Twitter Feed!
@@ -45,7 +46,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20px'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/IWeFmB0.png) center / cover`}} ></CardTitle>
             <CardText>
               Kwitter (Twitter Clone)!
@@ -66,7 +67,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/lLy1ufQ.png) center / cover`}} ></CardTitle>
             <CardText>
               Django App Ghost Post!
@@ -81,7 +82,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWmR8T6.png) center / cover`}} ></CardTitle>
             <CardText>
               Django Bug Tracker!
@@ -96,7 +97,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWnJrSN.png) center / cover`}} ></CardTitle>
             <CardText>
               Twitter Clone!
@@ -117,7 +118,7 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/qbYP3Ex.png) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Maze Runner!
@@ -132,7 +133,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
           <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/pThRImZ.png) center / cover`}} ></CardTitle>
             <CardText>
               Magic 8 Ball!
@@ -147,7 +148,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/AOFDEPe.png) center / cover`}} ></CardTitle>
             <CardText>
               Halloween Coin Flip!
@@ -170,7 +171,7 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
             
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/EHhfo93.png) center / cover`}} ></CardTitle>
             <CardText>
               Javascript Sokoban!
@@ -185,7 +186,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/eGWcJbj.png) center / cover`}} ></CardTitle>
             <CardText>
               Tower Of Hanoi!
@@ -200,7 +201,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', top:'20'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/oyWMAZC.png) center / cover`}} ></CardTitle>
             <CardText>
               Connect Four
