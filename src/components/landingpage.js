@@ -9,7 +9,7 @@ class Landing extends Component {
         <Grid className="landing-grid"style={{overflowY: 'scroll'}}>
           <Cell col={12}>
             
-          <div><h1 className="landingpage-title"></h1></div> 
+          <div><h1 className="landingpage-title">
           
           <div className="application">
             <Helmet>
@@ -18,7 +18,8 @@ class Landing extends Component {
             async defer></script>
             </Helmet>
           </div>
-          
+          </h1></div> 
+
           <div
           class="LI-profile-badge"  
           data-version="v1" 

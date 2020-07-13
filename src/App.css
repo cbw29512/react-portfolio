@@ -13,17 +13,28 @@ header {
   position: sticky;
 }
 
-/* div.mdl-layout__drawer-button {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+.header-row {
+  position: sticky;
 }
 
-div.mdl-layout__drawer-button > i {
-  position: -webkit-sticky;
+/* three lines on tool bar "hamburger" */
+
+div.drawer-button {
   position: sticky;
-  top: 10rem;
-} */
+}
+
+i.material-icons {
+  color: red;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+}
+
+div.mdl-tabs__tab-bar {
+   position: fixed;
+   width: 100%;
+   overflow: hidden;
+}
 
 .landing-grid {
   background: dodgerblue;  /* fallback for old browsers */
@@ -59,12 +70,16 @@ div.mdl-layout__content {
   z-index: 0;
 } 
 
-.projects-grid {
+div.projects-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  height: 5vh;
+  padding-top: 15%;
 }
 
 /* Resume Page css */
+
 .resume-right-col {
   background: #27221F;
   color: whitesmoke;
@@ -98,7 +113,6 @@ div.mdl-layout__content {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  
 }
 
 .icon-github {
@@ -111,7 +125,7 @@ div.mdl-layout__content {
 /* contact page css */
 
 img.avatar-img {
-  width: width;
+  width: auto;
   border-radius: 20%;
   max-width: 100%;
   height: auto;
@@ -201,6 +215,7 @@ div.contact-icon {
 }
 
 /* linkedin card */
+
 div.LI-footer.LI-row > a {
   float: left;
 }

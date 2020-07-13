@@ -7,6 +7,8 @@ A React based personal portfolio app using create-react-app, font awesome, React
 * create-react-app cli
 * React MDL material design
 * React Router v4
+* Font awesome
+
 
 # Start App
 npm install
