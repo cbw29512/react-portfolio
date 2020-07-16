@@ -21,7 +21,7 @@ class Projects extends Component {
               React Photo Wall!
             </CardText>
             <CardActions border>
-              <a href='https://gitlab.com/cbw29512/assessment---react-photo-wall' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+              <a href='https://github.com/cbw29512/assessment---react-photo-wall' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
               <a href='https://i.imgur.com/Zb4ZKIH.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -51,7 +51,7 @@ class Projects extends Component {
               Kwitter (Twitter Clone)!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>Gitlab</Button></a>
+            <a href='https://github.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://ty914.gitlab.io/assessment---kwitter-frontend/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -72,7 +72,7 @@ class Projects extends Component {
               Django App Ghost Post!
             </CardText>
             <CardActions border>
-              <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+              <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
               <a href='https://i.imgur.com/lLy1ufQ.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -87,7 +87,7 @@ class Projects extends Component {
               Django Bug Tracker!
             </CardText>
             <CardActions border>
-            <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+            <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://i.imgur.com/FWmR8T6.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -102,7 +102,7 @@ class Projects extends Component {
               Twitter Clone!
             </CardText>
             <CardActions border>
-            <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>Github</Button></a>
+            <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://i.imgur.com/FWnJrSN.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -123,7 +123,7 @@ class Projects extends Component {
               Javascript Maze Runner!
             </CardText>
             <CardActions border>
-              <a href='https://gitlab.com/cbw29512/maze1' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+              <a href='https://github.com/cbw29512/maz1' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
               <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -138,7 +138,7 @@ class Projects extends Component {
               Magic 8 Ball!
             </CardText>
             <CardActions border>
-              <a href='https://gitlab.com/cbw29512/magic8ball' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
+              <a href='https://github.com/cbw29512/magiceightball' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
               <a href='https://cbw29512.gitlab.io/magic8ball/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -153,7 +153,7 @@ class Projects extends Component {
               Halloween Coin Flip!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://github.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -176,7 +176,7 @@ class Projects extends Component {
               Javascript Sokoban!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://github.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -191,7 +191,7 @@ class Projects extends Component {
               Tower Of Hanoi!
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/towerofhanoi/pages' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://github.com/cbw29512/towerofhanoi' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://cbw29512.gitlab.io/towerofhanoi/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -206,7 +206,7 @@ class Projects extends Component {
               Connect Four
             </CardText>
             <CardActions border>
-            <a href='https://gitlab.com/cbw29512/connectfour' target="_blank" rel="noopener noreferrer"><Button colored>GitLab</Button></a>
+            <a href='https://github.com/cbw29512/connectfour' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
             <a href='https://cbw29512.gitlab.io/connectfour/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
