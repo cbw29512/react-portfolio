@@ -5,7 +5,6 @@ import Experience from './experience';
 import Skills from './skills';
 
 
-
 class Resume extends Component {
   render() {
     return(
@@ -17,32 +16,38 @@ class Resume extends Component {
             <h2 style={{color:'black', paddingTop: '1em'}}>Chris Wilson</h2>
             <h4 style={{color: 'black'}}>Full Stack Web Developer</h4>
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
-            <p>Seeking a position as a Full Stack Web Developer where I can solve
+            {/* <p>Seeking a position as a Full Stack Web Developer where I can solve
                 problems, and provide end-to-end solutions from vision to a production
                 ready experience. I bring a team oriented mindset, and mission ready
                 drive to any project. My daily goal is to be prepared to develop services
-                and functionality for use by web applications.</p>
-            <hr style={{borderTop: '3px solid red', width: '100%'}}/>
+                and functionality for use by web applications.</p> */}
+            {/* <hr style={{borderTop: '3px solid red', width: '100%'}}/> */}
             <h2>Certifications</h2>
+            
             <Education
               startYear={2019}
               endYear={2020}
-              schoolName="Kenzie Academy"
-              schoolDescription="Full Stack Web Developer"
+              schoolDescription="CS50 Web Programming with Python/JavaScript"
+              schoolName="Harvard University"
                />
-
+            
                <Education
                  startYear={2019}
                  endYear={2020}
-                 schoolName="Free Code Camp"
                  schoolDescription="Responsive Web Design"
+                 schoolName="Free Code Camp"
                   />
 
                 <Education
                  startYear={2002}
-
+                 schoolDescription="A+ Hardware/Software"
                  schoolName="CompTIA"
-                 schoolDescription="A+ Hardware/Software Certification"
+                  /> 
+
+                <Education
+                 startYear={2000}
+                 schoolDescription="Program for Machine Setup Operators"
+                 schoolName="Dept. Of Labor"
                   /> 
 
                 <div style={{textAlign: 'center', cursor:'pointer'}}>
@@ -52,8 +57,12 @@ class Resume extends Component {
                     alt="avatar"
                     style={{height: '250px'}}
                   />
-                  </a> <p style={{fontSize:'18px'}}>Click to Verify!</p>
-                  </div>
+                  </a> 
+                  <a href="https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url">
+                  <p style={{fontSize:'18px'}}>Click to Verify!</p>
+                  </a>
+                  
+                </div>
 
             <br />
             <hr style={{borderTop: '3px solid red', width: '100%'}}/>
@@ -80,21 +89,28 @@ class Resume extends Component {
                     barnumber="50%"
                     />
                     <Skills
-                      skill="Django/PostgreSQL"
+                      skill="Django/SQL"
                       progress={50}
                       barnumber="50%"
                       />
 
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2 style={{paddingTop: '1em'}}>Education</h2>  
+            <h2 style={{paddingTop: '.5 em'}}>Education</h2>  
     
                 <Education
                  startYear={1995}
                  endYear={2000}
+                 schoolName="Kenzie Academy"
+                 schoolDescription="Full Stack Web Developer"
+                  />   
+                
+                {/* <Education
+                 startYear={1995}
+                 endYear={2000}
                  schoolName="Department of Labor"
                  schoolDescription="Apprenticeship Program for Machine Setup Operators"
-                  />   
+                  />    */}
 
                 <Education
                  startYear={1995}
@@ -107,16 +123,22 @@ class Resume extends Component {
 
               <h2>Experience</h2>
 
+              <Experience
+              jobName="Full Time Remote Student | Kenzie Academy"
+              jobDescription="Attended an accelerated one-year remote program designed to train competent software engineers.
+              Focused on creating consumer-ready apps and web development through modern methodologies.
+              Created fully functioning web pages, game, and applications (front-end and back-end).
+              "
+              />
+
             <Experience
-              
-              jobName="Truck Driver | Koch Bro., ARD, Schneider, Werner"
+              jobName="Logistics Specialist | Koch Bro., ARD, Schneider, Werner"
               jobDescription="Route plan and safely navigate a semi-truck with various
               equipment and freight. Ensured superior customer interaction and on-time delivery.
               Ensured DOT compliance for the load."
               />
 
               <Experience
-                
                 jobName="Shop/Support Manager | Walmart, Edwards Wood Products"
                 jobDescription="Ensured workers followed company SOP.
                 Full time member of the new hire board and safety committee.
@@ -124,7 +146,6 @@ class Resume extends Component {
                 />
 
                <Experience
-              
                jobName="Process Technician, QC | Aaroco, Schaeffler Group"
                jobDescription="Operate precision measuring machine and equipment.
                Assisted with updating SOP, paperwork compliance in a lean
@@ -133,7 +154,6 @@ class Resume extends Component {
                />
 
                 <Experience
-                
                 jobName="Anti-Terrorist Adversary Team | Secuitas Security Services"
                 jobDescription="Weapons and tactics instructor for the Robinson Nuclear power
                 plant security force. Traveled as a team to four sites: SC, NC, GA, FL.
@@ -146,7 +166,7 @@ class Resume extends Component {
                 jobDescription="Honorable Discharge"
                 />
               <Experience
-                jobName="SC State Guard | Drill Instructor SSG"
+                jobName="SC State Guard | Instructor SSG"
                 jobDescription="Volunteer"
                 />    
           </Cell>

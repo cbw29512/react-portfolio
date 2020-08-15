@@ -32,10 +32,9 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1>Full Stack Web Developer</h1>
+             <hr/>
 
-            <hr/>
-
-          <p> GIT | HTML | CSS | JavaScript | Python | React | Redux | Django | PostgreSQL </p>
+          <p> GIT | VSC | HTML | CSS | JavaScript | Python | React | Redux | Django | SQL </p>
 
         <div className="social-links">
           
