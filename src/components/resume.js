@@ -99,18 +99,18 @@ class Resume extends Component {
             <h2 style={{paddingTop: '.5 em'}}>Education</h2>  
     
                 <Education
-                 startYear={1995}
-                 endYear={2000}
+                 startYear={2019}
+                 endYear={2020}
                  schoolName="Kenzie Academy"
                  schoolDescription="Full Stack Web Developer"
                   />   
                 
-                {/* <Education
+                <Education
                  startYear={1995}
                  endYear={2000}
                  schoolName="Department of Labor"
                  schoolDescription="Apprenticeship Program for Machine Setup Operators"
-                  />    */}
+                  />   
 
                 <Education
                  startYear={1995}
@@ -163,7 +163,7 @@ class Resume extends Component {
                 <h1>Military Experience</h1>
               <Experience
                 jobName="Military | 31B / 11B SPC"
-                jobDescription="Honorable Discharge"
+                jobDescription="Honorable"
                 />
               <Experience
                 jobName="SC State Guard | Instructor SSG"
