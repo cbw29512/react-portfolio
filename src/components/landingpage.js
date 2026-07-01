@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const HERO_SKILLS = [
   'Python Automation',
   'Technical Analysis',
+  'IBM Z / z/OS',
   'React',
   'GitHub Pages',
-  'Linux',
-  'Mainframe Fundamentals'
+  'Credly Badges'
 ];
 
 class Landing extends Component {
@@ -29,7 +29,7 @@ class Landing extends Component {
             <section className="hero-card">
               <p className="eyebrow">Portfolio / Resume</p>
               <h1>Chris Wilson</h1>
-              <h2>Technical Analyst | Python Automation | Web Developer</h2>
+              <h2>Technical Analyst | IBM Mainframe | Python Automation</h2>
               <p className="hero-copy">
                 I build practical tools, troubleshoot complex systems, and turn messy workflows into clear, useful software.
               </p>
