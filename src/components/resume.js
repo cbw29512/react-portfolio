@@ -5,75 +5,92 @@ import Experience from './experience';
 import Skills from './skills';
 
 const PROFILE_SUMMARY = [
-  'Technical analyst and builder focused on Python automation, IBM mainframe learning, practical web apps, and reliable support workflows.',
-  'I connect business problems to working software: clear documentation, clean interfaces, GitHub-based delivery, and systems that are easy to maintain.'
+  'Mainframe storage analyst and software builder focused on IBM z/OS, technical analysis, Python automation, practical web apps, and reliable support workflows.',
+  'I connect enterprise platform work with modern development: clear documentation, working tools, GitHub-based delivery, and systems that are easy to support.'
 ];
 
-const CERTIFICATIONS = [
-  { startYear: 'Verified', endYear: '', schoolDescription: 'CompTIA A+ Hardware/Software badge through Credly', schoolName: 'CompTIA / Credly' },
-  { startYear: '30+', endYear: '', schoolDescription: 'IBM digital badges and mainframe learning evidence', schoolName: 'IBM SkillsBuild / Credly' },
-  { startYear: '2019', endYear: '2020', schoolDescription: 'CS50 Web Programming with Python/JavaScript', schoolName: 'Harvard University / edX' },
-  { startYear: '2019', endYear: '2020', schoolDescription: 'Responsive Web Design', schoolName: 'freeCodeCamp' }
+const CREDENTIALS = [
+  { schoolDescription: 'Credly credential portfolio with CompTIA A+ and IBM digital badges', schoolName: 'Credly' },
+  { schoolDescription: 'CompTIA A+ Hardware/Software', schoolName: 'CompTIA' },
+  { schoolDescription: 'IBM mainframe learning credentials and digital badges', schoolName: 'IBM SkillsBuild / Interskill / Franklin Skills' },
+  { schoolDescription: 'CS50 Web Programming with Python/JavaScript', schoolName: 'Harvard University / edX' },
+  { schoolDescription: 'Responsive Web Design', schoolName: 'freeCodeCamp' }
 ];
 
-const EDUCATION = [
-  { startYear: '2021', endYear: '2022', schoolName: 'Franklin Apprenticeship Program / IBM', schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program' },
-  { startYear: '2019', endYear: '2020', schoolName: 'Kenzie Academy', schoolDescription: 'Full-Stack Web Development Bootcamp' },
-  { startYear: '1995', endYear: '1998', schoolName: 'Northeastern Technical College', schoolDescription: 'Associate Degree, Machine Tool Technology' }
-];
-
-const MAINFRAME_TRAINING = [
-  { jobName: 'IBM z/OS & Mainframe Operations Training', jobDescription: 'Hands-on learning across IBM Z concepts, z/OS fundamentals, JCL, JES/SDSF job review, batch processing, system messages, and mainframe operations workflows.' },
-  { jobName: 'Enterprise Mainframe Systems Exposure', jobDescription: 'Working knowledge path includes DFSMS/storage concepts, GDG datasets, TSO/ISPF navigation, REXX awareness, COBOL batch context, DB2/CICS/MQ terminology, and production-support style troubleshooting.' },
-  { jobName: 'Credly Badge Portfolio', jobDescription: 'Maintains a Credly-backed badge portfolio with CompTIA A+ plus 30+ IBM digital badges and mainframe-related learning evidence.' }
+const TRAINING = [
+  { schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program completed during first Black Knight year', schoolName: 'Franklin Apprenticeship Program / IBM' },
+  { schoolDescription: 'Full-Stack Web Development Bootcamp', schoolName: 'Kenzie Academy' },
+  { schoolDescription: 'Associate Degree, Machine Tool Technology', schoolName: 'Northeastern Technical College' }
 ];
 
 const EXPERIENCE = [
-  { jobName: 'Mortgage / Technical Analyst | ICE Mortgage Technology', jobDescription: 'Analyze platform and workflow issues, troubleshoot data behavior, document defects, and coordinate practical resolutions between users and technical teams.' },
-  { jobName: 'Python Automation & Web Projects | Independent Developer', jobDescription: 'Build GitHub-hosted tools, prototype web apps, automation scripts, and lightweight dashboards using Python, JavaScript, React, HTML/CSS, Git, and Linux-based workflows.' },
-  { jobName: 'Full-Time Remote Student | Kenzie Academy', jobDescription: 'Completed an accelerated software engineering program focused on front-end and back-end development, consumer-ready applications, Git workflows, and remote collaboration.' },
-  { jobName: 'Operations, Logistics & Technical Support Leadership', jobDescription: 'Led and supported teams across logistics, manufacturing, quality-control, SOP documentation, training, troubleshooting, and customer-focused delivery.' }
+  { jobName: 'Analyst, Mainframe Storage | ICE Mortgage Technology', jobDescription: 'Administer IBM z/OS enterprise storage systems and supporting infrastructure while analyzing platform and workflow issues.' },
+  { jobName: 'Systems Software Programmer | ICE Mortgage Technology', jobDescription: 'Developed and maintained systems software within the IBM z/OS environment.' },
+  { jobName: 'Systems Software Programmer | Black Knight', jobDescription: 'Built and supported systems software for enterprise mainframe platforms.' },
+  { jobName: 'Python Automation & Web Projects | Independent Developer', jobDescription: 'Build GitHub-hosted tools, prototype web apps, automation scripts, and lightweight dashboards using Python, JavaScript, React, HTML/CSS, Git, and Linux-based workflows.' }
 ];
 
 const SKILLS = [
+  { skill: 'IBM z/OS Storage Administration', progress: 90, barnumber: '90%' },
+  { skill: 'JCL / Batch Operations / SDSF Concepts', progress: 85, barnumber: '85%' },
   { skill: 'Technical Analysis & Documentation', progress: 95, barnumber: '95%' },
-  { skill: 'IBM Mainframe / z/OS Fundamentals', progress: 85, barnumber: '85%' },
-  { skill: 'JCL / SDSF / Batch Operations Concepts', progress: 80, barnumber: '80%' },
   { skill: 'Python Automation', progress: 90, barnumber: '90%' },
-  { skill: 'JavaScript / React', progress: 85, barnumber: '85%' },
-  { skill: 'HTML / CSS / Responsive Design', progress: 90, barnumber: '90%' },
+  { skill: 'React / JavaScript / Web Development', progress: 85, barnumber: '85%' },
   { skill: 'Git / GitHub / GitHub Pages', progress: 90, barnumber: '90%' },
   { skill: 'Linux / Docker / Deployment Basics', progress: 75, barnumber: '75%' }
 ];
 
 class Resume extends Component {
   renderEducation(items) {
-    try { return items.map((item) => <Education key={`${item.schoolName}-${item.schoolDescription}`} startYear={item.startYear} endYear={item.endYear} schoolDescription={item.schoolDescription} schoolName={item.schoolName} />); }
-    catch (error) { console.error('Resume education failed to render:', error); return <p>Education details are temporarily unavailable.</p>; }
+    try {
+      return items.map((item) => <Education key={`${item.schoolName}-${item.schoolDescription}`} schoolDescription={item.schoolDescription} schoolName={item.schoolName} />);
+    } catch (error) {
+      console.error('Resume education failed to render:', error);
+      return <p>Education details are temporarily unavailable.</p>;
+    }
   }
 
   renderExperience(items) {
-    try { return items.map((item) => <Experience key={item.jobName} jobName={item.jobName} jobDescription={item.jobDescription} />); }
-    catch (error) { console.error('Resume experience failed to render:', error); return <p>Experience details are temporarily unavailable.</p>; }
+    try {
+      return items.map((item) => <Experience key={item.jobName} jobName={item.jobName} jobDescription={item.jobDescription} />);
+    } catch (error) {
+      console.error('Resume experience failed to render:', error);
+      return <p>Experience details are temporarily unavailable.</p>;
+    }
   }
 
   renderSkills(items) {
-    try { return items.map((item) => <Skills key={item.skill} skill={item.skill} progress={item.progress} barnumber={item.barnumber} />); }
-    catch (error) { console.error('Resume skills failed to render:', error); return <p>Skills are temporarily unavailable.</p>; }
+    try {
+      return items.map((item) => <Skills key={item.skill} skill={item.skill} progress={item.progress} barnumber={item.barnumber} />);
+    } catch (error) {
+      console.error('Resume skills failed to render:', error);
+      return <p>Skills are temporarily unavailable.</p>;
+    }
   }
 
   render() {
     return (
-      <div className="resume-bg"><Grid><Cell col={4} className="resume-left-col">
-        <h2>Chris Wilson</h2><h4>Technical Analyst | IBM Mainframe | Python Automation</h4><hr />
-        {PROFILE_SUMMARY.map((line) => <p key={line}>{line}</p>)}
-        <h2>Certifications & Badges</h2>{this.renderEducation(CERTIFICATIONS)}
-        <h2>Core Skills</h2>{this.renderSkills(SKILLS)}
-      </Cell><Cell className="resume-right-col" col={8}>
-        <h2>IBM / Mainframe Training</h2>{this.renderExperience(MAINFRAME_TRAINING)}<hr />
-        <h2>Education</h2>{this.renderEducation(EDUCATION)}<hr />
-        <h2>Experience</h2>{this.renderExperience(EXPERIENCE)}
-      </Cell></Grid></div>
+      <div className="resume-bg">
+        <Grid>
+          <Cell col={4} className="resume-left-col">
+            <h2>Chris Wilson</h2>
+            <h4>Mainframe Storage Analyst | Software & AI Developer</h4>
+            <hr />
+            {PROFILE_SUMMARY.map((line) => <p key={line}>{line}</p>)}
+            <h2>Credentials</h2>
+            {this.renderEducation(CREDENTIALS)}
+            <h2>Core Skills</h2>
+            {this.renderSkills(SKILLS)}
+          </Cell>
+          <Cell className="resume-right-col" col={8}>
+            <h2>Experience</h2>
+            {this.renderExperience(EXPERIENCE)}
+            <hr />
+            <h2>Training & Education</h2>
+            {this.renderEducation(TRAINING)}
+          </Cell>
+        </Grid>
+      </div>
     );
   }
 }
