@@ -109,9 +109,25 @@ div.mdl-layout__content {
 
 .resume-item h4 { margin-bottom: 4px; }
 
-.resume-bars { width: 100%; }
+.section-intro { color: #cbd5e1; margin-bottom: 24px; }
 
-.skills { font-size: 16px; padding: 8px 0; font-weight: 700; }
+.skill-group {
+  margin: 0 0 22px; padding: 18px; border: 1px solid rgba(226, 232, 240, 0.18);
+  border-radius: 16px; background: rgba(255, 255, 255, 0.04);
+}
+
+.skill-group h4 {
+  margin: 0 0 12px; color: #f8fafc; font-size: 1.15rem;
+}
+
+.skill-chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.skill-chip {
+  display: inline-flex; align-items: center; padding: 8px 12px;
+  border-radius: 999px; background: rgba(224, 242, 254, 0.14);
+  color: #e0f2fe; border: 1px solid rgba(125, 211, 252, 0.28);
+  font-weight: 700; line-height: 1.2;
+}
 
 .contact-body {
   min-height: calc(100vh - 64px); padding: 48px 20px; text-align: center;
@@ -142,4 +158,6 @@ div.mdl-layout__content {
 @media (max-width: 720px) {
   .hero-card, .resume-left-col, .resume-right-col { padding: 24px 18px; }
   .projects-grid { grid-template-columns: 1fr; }
+  .skill-group { padding: 14px; }
+  .skill-chip { font-size: 0.92rem; }
 }
