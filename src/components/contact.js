@@ -20,6 +20,12 @@ const CONTACT_METHODS = [
     detail: 'linkedin.com/in/cbwdivclass01'
   },
   {
+    label: 'Credly',
+    href: 'https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url',
+    icon: 'fa fa-certificate',
+    detail: 'Verified credential badge'
+  },
+  {
     label: 'Appointment',
     href: 'https://calendly.com/divclass01/60min',
     icon: 'fa fa-calendar',
