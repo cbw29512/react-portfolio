@@ -23,18 +23,20 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <Layout>
-          <Header className="header-color" title={<Link className="site-title" to="/">Chris Wilson</Link>} scroll>
+          <Header className="header-color" title={<Link className="site-title" to="/" aria-label="Chris Wilson home">Chris Wilson</Link>} scroll>
             <Navigation>{this.renderNavItems()}</Navigation>
           </Header>
 
-          <Drawer title={<Link className="drawer-title" to="/">Chris Wilson</Link>}>
+          <Drawer title={<Link className="drawer-title" to="/" aria-label="Chris Wilson home">Chris Wilson</Link>}>
             <Navigation>{this.renderNavItems()}</Navigation>
           </Drawer>
 
           <Content>
-            <div className="page-content" />
-            <Main />
+            <main id="main-content" className="main-content" tabIndex="-1">
+              <Main />
+            </main>
           </Content>
         </Layout>
       </div>

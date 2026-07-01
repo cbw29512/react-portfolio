@@ -10,6 +10,18 @@ body {
   color: var(--ink); font-family: Oxygen, Arial, sans-serif;
 }
 
+.skip-link {
+  position: absolute; left: 12px; top: -48px; z-index: 9999;
+  padding: 12px 16px; background: #ffffff; color: var(--accent-dark);
+  border: 3px solid var(--accent); border-radius: 10px; font-weight: 700;
+}
+
+.skip-link:focus { top: 12px; }
+
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid #facc15; outline-offset: 4px;
+}
+
 .header-color { background: linear-gradient(to right, #0f172a, #1e3a8a, #2563eb); }
 
 .site-title, .drawer-title {
@@ -17,6 +29,8 @@ body {
 }
 
 .drawer-title { color: var(--ink); }
+
+.main-content:focus { outline: none; }
 
 div.mdl-layout__content {
   min-height: 100vh; background: linear-gradient(135deg, #dbeafe, #f8fafc);
@@ -62,7 +76,7 @@ div.mdl-layout__content {
   color: var(--accent-dark); text-decoration: none; font-weight: 700;
 }
 
-.hero-button.primary, .hero-button:hover { background: var(--accent); color: white; }
+.hero-button.primary, .hero-button:hover, .hero-button:focus-visible { background: var(--accent); color: white; }
 
 .projects-page { padding-top: 16px; }
 
@@ -92,6 +106,8 @@ div.mdl-layout__content {
 }
 
 .resume-right-col { background: #111827; color: whitesmoke; padding: 2em; }
+
+.resume-item h4 { margin-bottom: 4px; }
 
 .resume-bars { width: 100%; }
 
