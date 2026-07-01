@@ -30,14 +30,23 @@ const EXPERIENCE = [
   { jobName: 'Python Automation & Web Projects | Independent Developer', jobDescription: 'Build GitHub-hosted tools, prototype web apps, automation scripts, and lightweight dashboards using Python, JavaScript, React, HTML/CSS, Git, and Linux-based workflows.' }
 ];
 
-const SKILLS = [
-  { skill: 'IBM z/OS Storage Administration', progress: 90, barnumber: '90%' },
-  { skill: 'JCL / Batch Operations / SDSF Concepts', progress: 85, barnumber: '85%' },
-  { skill: 'Technical Analysis & Documentation', progress: 95, barnumber: '95%' },
-  { skill: 'Python Automation', progress: 90, barnumber: '90%' },
-  { skill: 'React / JavaScript / Web Development', progress: 85, barnumber: '85%' },
-  { skill: 'Git / GitHub / GitHub Pages', progress: 90, barnumber: '90%' },
-  { skill: 'Linux / Docker / Deployment Basics', progress: 75, barnumber: '75%' }
+const SKILL_GROUPS = [
+  {
+    title: 'Mainframe & Enterprise',
+    items: ['IBM z/OS', 'JCL', 'Mainframe storage administration', 'RACF', 'GDPS', 'z/OS system services', 'z/OS Connect EE', 'Batch operations', 'SDSF', 'DFSMS concepts']
+  },
+  {
+    title: 'Software & AI',
+    items: ['Python automation', 'Full-stack web development', 'React', 'JavaScript', 'Front-end engineering', 'Back-end services', 'Object-oriented programming', 'AI project development', 'Automation workflows']
+  },
+  {
+    title: 'Web & Delivery',
+    items: ['HTML', 'CSS', 'Responsive design', 'Git', 'GitHub', 'GitHub Pages', 'SQL fundamentals', 'Django fundamentals', 'Linux', 'Docker basics']
+  },
+  {
+    title: 'Practice',
+    items: ['Technical analysis', 'Documentation', 'Testing', 'Debugging', 'Agile teamwork', 'Security awareness', 'Support workflows', 'Troubleshooting', 'User-focused delivery']
+  }
 ];
 
 class Resume extends Component {
@@ -59,9 +68,9 @@ class Resume extends Component {
     }
   }
 
-  renderSkills(items) {
+  renderSkillGroups(items) {
     try {
-      return items.map((item) => <Skills key={item.skill} skill={item.skill} progress={item.progress} barnumber={item.barnumber} />);
+      return items.map((group) => <Skills key={group.title} title={group.title} items={group.items} />);
     } catch (error) {
       console.error('Resume skills failed to render:', error);
       return <p>Skills are temporarily unavailable.</p>;
@@ -79,15 +88,16 @@ class Resume extends Component {
             {PROFILE_SUMMARY.map((line) => <p key={line}>{line}</p>)}
             <h2>Credentials</h2>
             {this.renderEducation(CREDENTIALS)}
-            <h2>Core Skills</h2>
-            {this.renderSkills(SKILLS)}
+            <h2>Training & Education</h2>
+            {this.renderEducation(TRAINING)}
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Experience</h2>
             {this.renderExperience(EXPERIENCE)}
             <hr />
-            <h2>Training & Education</h2>
-            {this.renderEducation(TRAINING)}
+            <h2>Core Skills</h2>
+            <p className="section-intro">Grouped by current enterprise, software, delivery, and support strengths.</p>
+            {this.renderSkillGroups(SKILL_GROUPS)}
           </Cell>
         </Grid>
       </div>
