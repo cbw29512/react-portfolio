@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 
+const PROJECT_GROUPS = [
+  { label: 'Featured', projects: [
+    { title: 'Resume Portfolio Refresh', summary: 'Employer-facing React portfolio with sharper positioning, cleaner resume content, and GitHub Pages deployment.', stack: 'React, GitHub Pages, CSS', github: 'https://github.com/cbw29512/react-portfolio', demo: 'https://cbw29512.github.io/react-portfolio', background: 'linear-gradient(135deg, #0f172a, #2563eb)' },
+    { title: 'Revenue Recovery Workflow Prototype', summary: 'Local workflow prototype with test-mode webhooks, approval gates, recovery packets, and automated reports.', stack: 'Python, CLI, Markdown reports', github: 'https://github.com/cbw29512/hermes-money-factory', demo: 'https://cbw29512.github.io/hermes-money-factory/', background: 'linear-gradient(135deg, #111827, #047857)' },
+    { title: 'WatchPi Network Appliance', summary: 'Raspberry Pi network appliance plan focused on Pi-hole, honeypot services, monitoring, SSH access, and reliable 24/7 operation.', stack: 'Ubuntu Server, Raspberry Pi, SSH, Network Security', github: null, demo: null, background: 'linear-gradient(135deg, #1f2937, #7c3aed)' }
+  ] },
+  { label: 'Web', projects: [
+    { title: 'Magic & Mystery Mercantile Prototypes', summary: 'Static storefront prototypes built around editable product data so a future admin/backend can manage products without redesigning the site.', stack: 'HTML, CSS, JavaScript, ecommerce-ready structure', github: null, demo: null, background: 'linear-gradient(135deg, #312e81, #db2777)' },
+    { title: 'StudyHub', summary: 'Certification study dashboard concept with pages for learning tracks, decks, notes, and repeatable study workflows.', stack: 'HTML, CSS, JavaScript, GitHub', github: 'https://github.com/cbw29512/StudyHub', demo: null, background: 'linear-gradient(135deg, #064e3b, #0891b2)' },
+    { title: 'Nerd Scroll', summary: 'GitHub Pages site project with static docs output, simple local server workflow, and deployable front-end assets.', stack: 'Static site, GitHub Pages, HTML/CSS', github: 'https://github.com/cbw29512/nerd-scroll', demo: 'https://cbw29512.github.io/nerd-scroll/', background: 'linear-gradient(135deg, #7f1d1d, #ea580c)' }
+  ] },
+  { label: 'Tools', projects: [
+    { title: 'Printable Tabletop Tools', summary: 'Printable monster-card and encounter support concepts focused on readable combat information and practical table use.', stack: 'Print layout, content systems', github: null, demo: null, background: 'linear-gradient(135deg, #422006, #ca8a04)' },
+    { title: 'Local AI Workstation Lab', summary: 'Ubuntu/NVIDIA/Ollama workstation experiments for local coding models, long-context testing, and practical developer workflows.', stack: 'Ubuntu, NVIDIA, Ollama, Python environments', github: null, demo: null, background: 'linear-gradient(135deg, #020617, #4f46e5)' },
+    { title: 'Workflow Test Harness', summary: 'Validated local workflow pieces including webhook simulation, duplicate guards, state transitions, CLI smoke tests, and summary reporting.', stack: 'Python, tests, state machine design', github: 'https://github.com/cbw29512/hermes-money-factory', demo: null, background: 'linear-gradient(135deg, #164e63, #0f766e)' }
+  ] }
+];
 
 class Projects extends Component {
   constructor(props) {
@@ -8,238 +25,64 @@ class Projects extends Component {
     this.state = { activeTab: 0 };
   }
 
-  toggleCategories() {
-
-    if(this.state.activeTab === 0){
-      return(
-        <div className="projects-grid">
-
-          {/* Project 1 */}
-          <Card shadow={5} style={{ maxWidth: '440px', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/Zb4ZKIH.png) center / cover`}} ></CardTitle>
-            <CardText>
-              React Photo Wall!
-            </CardText>
-            <CardActions border>
-              <a href='https://github.com/cbw29512/assessment---react-photo-wall' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='https://i.imgur.com/Zb4ZKIH.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{maxWidth: '440px', margin: 'auto', marginBottom: '15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/LM49S65.png) center / cover`}} ></CardTitle>
-            <CardText>
-              React Twitter Feed!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/twitter-feed' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://raw.githubusercontent.com/cbw29512/twitter-feed/master/ezgif.com-video-to-gif.gif' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{maxWidth: '440px', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/IWeFmB0.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Kwitter (Twitter Clone)!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/assessment---kwitter-frontend' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://ty914.gitlab.io/assessment---kwitter-frontend/' target="_blank" rel="noopener noreferrer"><Button colored>Live Demo</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        </div>
-      
-
-      )
-    } else if(this.state.activeTab === 1) {
+  renderProjectCard(project) {
+    try {
       return (
-        <div className="projects-grid">
-          {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/lLy1ufQ.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Django App Ghost Post!
-            </CardText>
-            <CardActions border>
-              <a href='https://github.com/cbw29512/ghostpost' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='https://i.imgur.com/lLy1ufQ.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWmR8T6.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Django Bug Tracker!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/bugtracker' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://i.imgur.com/FWmR8T6.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/FWnJrSN.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Twitter Clone!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/twitterclone' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://i.imgur.com/FWnJrSN.png' target="_blank" rel="noopener noreferrer"><Button colored>Example</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        </div>
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-      
-        <div className="projects-grid">
-          {/* Project 1 */}
-          
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/qbYP3Ex.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Javascript Maze Runner!
-            </CardText>
-            <CardActions border>
-              <a href='https://github.com/cbw29512/maz1' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='https://cbw29512.gitlab.io/maze1' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-          <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/pThRImZ.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Magic 8 Ball!
-            </CardText>
-            <CardActions border>
-              <a href='https://github.com/cbw29512/magiceightball' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-              <a href='https://cbw29512.gitlab.io/magic8ball/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '440', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/AOFDEPe.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Halloween Coin Flip!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/coin-object' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/coin-object/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        
-        </div>
-      
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-
-        <div className="projects-grid">
-          {/* Project 1 */}
-            
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/EHhfo93.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Javascript Sokoban!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/sokoban' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/sokoban/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/eGWcJbj.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Tower Of Hanoi!
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/towerofhanoi' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/towerofhanoi/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto', marginBottom:'15px'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: `url(https://i.imgur.com/oyWMAZC.png) center / cover`}} ></CardTitle>
-            <CardText>
-              Connect Four
-            </CardText>
-            <CardActions border>
-            <a href='https://github.com/cbw29512/connectfour' target="_blank" rel="noopener noreferrer"><Button colored>GitHub</Button></a>
-            <a href='https://cbw29512.gitlab.io/connectfour/' target="_blank" rel="noopener noreferrer"><Button colored>TRY ME!</Button></a>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        </div>     
-        
-      )
+        <Card key={project.title} shadow={5} className="project-card">
+          <CardTitle className="project-card-title" style={{ background: project.background }}>
+            {project.title}
+          </CardTitle>
+          <CardText>
+            <p>{project.summary}</p>
+            <p className="project-stack">{project.stack}</p>
+          </CardText>
+          <CardActions border>
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <Button colored>GitHub</Button>
+              </a>
+            )}
+            {project.demo && (
+              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                <Button colored>Live Site</Button>
+              </a>
+            )}
+          </CardActions>
+        </Card>
+      );
+    } catch (error) {
+      console.error('Project card failed to render:', error);
+      return <p key={project.title}>Project details are temporarily unavailable.</p>;
     }
+  }
 
+  renderActiveCategory() {
+    try {
+      const activeGroup = PROJECT_GROUPS[this.state.activeTab] || PROJECT_GROUPS[0];
+      return (
+        <div className="projects-grid">
+          {activeGroup.projects.map((project) => this.renderProjectCard(project))}
+        </div>
+      );
+    } catch (error) {
+      console.error('Project category failed to render:', error);
+      return <p className="content-error">Projects are temporarily unavailable.</p>;
+    }
   }
 
   render() {
-    return(
-      <div>
+    return (
+      <div className="projects-page">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Django</Tab>
-          <Tab>Javascript</Tab>
-          <Tab>Games</Tab>
+          {PROJECT_GROUPS.map((group) => <Tab key={group.label}>{group.label}</Tab>)}
         </Tabs>
-
-
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-
-
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.renderActiveCategory()}</div>
+          </Cell>
+        </Grid>
       </div>
-    )
+    );
   }
 }
 
