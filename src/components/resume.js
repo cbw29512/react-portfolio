@@ -10,15 +10,15 @@ const PROFILE_SUMMARY = [
 ];
 
 const CREDENTIALS = [
-  { schoolDescription: 'Credly credential portfolio with CompTIA A+ and IBM digital badges', schoolName: 'Credly' },
+  { schoolDescription: 'Credly Badge Portfolio', schoolName: 'CompTIA A+ and IBM digital badges' },
   { schoolDescription: 'CompTIA A+ Hardware/Software', schoolName: 'CompTIA' },
-  { schoolDescription: 'IBM mainframe learning credentials and digital badges', schoolName: 'IBM SkillsBuild / Interskill / Franklin Skills' },
-  { schoolDescription: 'CS50 Web Programming with Python/JavaScript', schoolName: 'Harvard University / edX' },
+  { schoolDescription: 'IBM Mainframe Digital Badges', schoolName: 'IBM SkillsBuild / Interskill / Franklin Skills' },
+  { schoolDescription: 'CS50 Web Programming with Python and JavaScript', schoolName: 'Harvard University / edX' },
   { schoolDescription: 'Responsive Web Design', schoolName: 'freeCodeCamp' }
 ];
 
 const TRAINING = [
-  { schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program completed during first Black Knight year', schoolName: 'Franklin Apprenticeship Program / IBM' },
+  { schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program', schoolName: 'Franklin Apprenticeship Program / IBM' },
   { schoolDescription: 'Full-Stack Web Development Bootcamp', schoolName: 'Kenzie Academy' },
   { schoolDescription: 'Associate Degree, Machine Tool Technology', schoolName: 'Northeastern Technical College' }
 ];
