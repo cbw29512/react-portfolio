@@ -15,15 +15,21 @@ const CONTACT_METHODS = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/cbwdivclass01',
+    href: 'https://www.linkedin.com/in/divclass01/',
     icon: 'fa fa-linkedin-square',
-    detail: 'linkedin.com/in/cbwdivclass01'
+    detail: 'linkedin.com/in/divclass01'
   },
   {
-    label: 'Credly',
-    href: 'https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url',
+    label: 'Credly Badges',
+    href: 'https://www.credly.com/users/christopherwilson/badges',
     icon: 'fa fa-certificate',
-    detail: 'Verified credential badge'
+    detail: 'Full badge portfolio'
+  },
+  {
+    label: 'Verify A+',
+    href: 'https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url',
+    icon: 'fa fa-check-circle',
+    detail: 'CompTIA A+ credential'
   },
   {
     label: 'Appointment',
@@ -53,7 +59,7 @@ class Contact extends Component {
     return (
       <div className="contact-body">
         <h1 className="contact-title">Contact Chris</h1>
-        <p className="contact-intro">Open to technical analyst, Python automation, web development, and support-engineering conversations.</p>
+        <p className="contact-intro">Open to technical analyst, IBM mainframe, Python automation, web development, and support-engineering conversations.</p>
         <div className="contact-icon-container">{this.renderContactMethods()}</div>
       </div>
     );
