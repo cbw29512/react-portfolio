@@ -40,8 +40,8 @@ class Landing extends Component {
                 <Link className="hero-button primary" to="/projects">View Projects</Link>
                 <Link className="hero-button" to="/resume">View Resume</Link>
                 <a className="hero-button" href="https://github.com/cbw29512" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a className="hero-button" href="https://www.linkedin.com/in/cbwdivclass01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a className="hero-button" href="https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url" target="_blank" rel="noopener noreferrer">Credly</a>
+                <a className="hero-button" href="https://www.linkedin.com/in/divclass01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a className="hero-button" href="https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url" target="_blank" rel="noopener noreferrer">Verify A+</a>
               </div>
             </section>
           </Cell>
