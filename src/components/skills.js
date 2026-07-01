@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import { Grid, Cell, ProgressBar } from 'react-mdl';
 
 class Skills extends Component {
+  renderSkillItems() {
+    try {
+      return this.props.items.map((item) => <span key={item} className="skill-chip">{item}</span>);
+    } catch (error) {
+      console.error('Skill items failed to render:', error);
+      return <span className="skill-chip">Technical problem solving</span>;
+    }
+  }
+
   render() {
     return(
-      <Grid>
-        <div className='resume-bars'>
-        <Cell col={12} >
-          <div className="skills">{this.props.skill}</div> 
-          <ProgressBar style={{margin: 'left', width: '100px'}} progress={this.props.progress} />
-          <div className="barnumber">{this.props.barnumber}</div>
-        </Cell>
-        </div>
-      </Grid>
+      <section className="skill-group" aria-labelledby={`skill-group-${this.props.title}`}>
+        <h4 id={`skill-group-${this.props.title}`}>{this.props.title}</h4>
+        <div className="skill-chip-list">{this.renderSkillItems()}</div>
+      </section>
     )
   }
 }
