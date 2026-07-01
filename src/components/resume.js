@@ -17,7 +17,7 @@ const CERTIFICATIONS = [
 ];
 
 const EDUCATION = [
-  { startYear: '2026', endYear: 'Present', schoolName: 'Franklin Apprenticeship Program / IBM', schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program' },
+  { startYear: '2021', endYear: '2022', schoolName: 'Franklin Apprenticeship Program / IBM', schoolDescription: 'IBM z/OS Mainframe Apprenticeship Program' },
   { startYear: '2019', endYear: '2020', schoolName: 'Kenzie Academy', schoolDescription: 'Full-Stack Web Development Bootcamp' },
   { startYear: '1995', endYear: '1998', schoolName: 'Northeastern Technical College', schoolDescription: 'Associate Degree, Machine Tool Technology' }
 ];
