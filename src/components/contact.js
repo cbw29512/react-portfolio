@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// Data schema: contact methods are declarative so links can be changed without
+// touching the rendering logic.
 const CONTACT_METHODS = [
   {
     label: 'Email',
@@ -56,13 +58,18 @@ class Contact extends Component {
   }
 
   render() {
-    return (
-      <div className="contact-body">
-        <h1 className="contact-title">Contact Chris</h1>
-        <p className="contact-intro">Open to technical analyst, IBM mainframe, Python automation, web development, and support-engineering conversations.</p>
-        <div className="contact-icon-container">{this.renderContactMethods()}</div>
-      </div>
-    );
+    try {
+      return (
+        <div className="contact-body">
+          <h1 className="contact-title">Contact Chris</h1>
+          <p className="contact-intro">Open to technical analyst, systems support, Python automation, web development, support engineering, and mainframe development conversations.</p>
+          <div className="contact-icon-container">{this.renderContactMethods()}</div>
+        </div>
+      );
+    } catch (error) {
+      console.error('Contact page failed to render:', error);
+      return <p className="content-error">Contact details are temporarily unavailable.</p>;
+    }
   }
 }
 
