@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 
+// Data schema: projects are grouped by how a recruiter should read them.
+// This keeps the page flexible for analyst, support, automation, and developer roles.
 const PROJECT_GROUPS = [
-  { label: 'Featured', intro: 'Best examples of current technical direction: mainframe-adjacent systems thinking, automation, web delivery, and practical tooling.', projects: [
+  { label: 'Featured', intro: 'Best examples of current technical direction: enterprise systems thinking, automation, web delivery, and practical tooling.', projects: [
     { title: 'Wilson Lab', summary: 'Interview-ready cyber lab orchestrator with a React dashboard, backend control plane, RBAC, audit logs, safety rails, and demo documentation.', stack: 'React, API design, Docker, RBAC, GitHub Pages', github: 'https://github.com/cbw29512/wilson-lab', demo: null, background: 'linear-gradient(135deg, #0f172a, #2563eb)' },
     { title: 'DungeonMaps', summary: 'Local LAN battle-map and token-tool foundation with a Node HTTP server, SQLite state, WebSocket sync seam, API endpoints, and smoke tests.', stack: 'Node.js, SQLite, WebSockets, API smoke tests', github: 'https://github.com/cbw29512/DungeonMaps', demo: null, background: 'linear-gradient(135deg, #422006, #ca8a04)' },
     { title: 'OpenClawOps', summary: 'Local operating workspace for tracking tasks, approvals, logs, research notes, next actions, and safe handoffs before external or risky actions.', stack: 'Ops workflow, local-first automation, approval tracking', github: 'https://github.com/cbw29512/openclawops', demo: null, background: 'linear-gradient(135deg, #020617, #4f46e5)' },
-    { title: 'Resume Portfolio Refresh', summary: 'Employer-facing React portfolio with stronger mainframe/software positioning, cleaner resume content, updated links, and GitHub Pages deployment.', stack: 'React, GitHub Pages, responsive CSS, SEO metadata', github: 'https://github.com/cbw29512/react-portfolio', demo: 'https://cbw29512.github.io/react-portfolio', background: 'linear-gradient(135deg, #7f1d1d, #ea580c)' }
+    { title: 'Resume Portfolio Refresh', summary: 'Employer-facing React portfolio with broader systems/software positioning, cleaner resume content, updated links, and GitHub Pages deployment.', stack: 'React, GitHub Pages, responsive CSS, SEO metadata', github: 'https://github.com/cbw29512/react-portfolio', demo: 'https://cbw29512.github.io/react-portfolio', background: 'linear-gradient(135deg, #7f1d1d, #ea580c)' }
   ] },
   { label: 'Case Studies', intro: 'Professional work framed safely as capabilities and workflows without exposing employer-owned code or sensitive systems.', projects: [
-    { title: 'IBM z/OS Storage Administration', summary: 'Enterprise storage administration focus across z/OS platform support, infrastructure analysis, documentation, and reliable operational workflows.', stack: 'IBM z/OS, storage administration, technical analysis, documentation', github: null, demo: null, background: 'linear-gradient(135deg, #0f172a, #0369a1)' },
+    { title: 'IBM z/OS Enterprise Support', summary: 'Enterprise platform support across z/OS workflows, infrastructure analysis, documentation, troubleshooting, and reliable operational processes.', stack: 'IBM z/OS, JCL, RACF concepts, GDPS concepts, documentation', github: null, demo: null, background: 'linear-gradient(135deg, #0f172a, #0369a1)' },
     { title: 'Mainframe Production Support', summary: 'Production-support style troubleshooting across batch operations, system behavior, platform workflows, and cross-team issue resolution.', stack: 'JCL, SDSF concepts, batch operations, troubleshooting, support workflows', github: null, demo: null, background: 'linear-gradient(135deg, #172554, #4338ca)' },
     { title: 'Technical Analyst Workflow Documentation', summary: 'Translate messy platform behavior into clear issue notes, repeatable checks, user-facing explanations, and practical resolution paths.', stack: 'Technical analysis, documentation, defect notes, user support', github: null, demo: null, background: 'linear-gradient(135deg, #14532d, #0f766e)' },
     { title: 'Python Automation for Operations', summary: 'Use Python and lightweight scripts to organize repeatable work, inspect data, reduce manual steps, and support clearer technical workflows.', stack: 'Python, CLI thinking, automation, data organization', github: null, demo: null, background: 'linear-gradient(135deg, #1e1b4b, #7c3aed)' }
@@ -26,6 +28,9 @@ const PROJECT_GROUPS = [
 class Projects extends Component {
   constructor(props) {
     super(props);
+
+    // State logic: activeTab controls which project group is visible.
+    // No server state is needed because this is a static portfolio page.
     this.state = { activeTab: 0 };
   }
 
@@ -82,18 +87,23 @@ class Projects extends Component {
   }
 
   render() {
-    return (
-      <div className="projects-page">
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          {PROJECT_GROUPS.map((group) => <Tab key={group.label}>{group.label}</Tab>)}
-        </Tabs>
-        <Grid>
-          <Cell col={12}>
-            <div className="content">{this.renderActiveCategory()}</div>
-          </Cell>
-        </Grid>
-      </div>
-    );
+    try {
+      return (
+        <div className="projects-page">
+          <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+            {PROJECT_GROUPS.map((group) => <Tab key={group.label}>{group.label}</Tab>)}
+          </Tabs>
+          <Grid>
+            <Cell col={12}>
+              <div className="content">{this.renderActiveCategory()}</div>
+            </Cell>
+          </Grid>
+        </div>
+      );
+    } catch (error) {
+      console.error('Projects page failed to render:', error);
+      return <p className="content-error">Projects are temporarily unavailable.</p>;
+    }
   }
 }
 
