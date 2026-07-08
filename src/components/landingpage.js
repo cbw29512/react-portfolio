@@ -31,8 +31,13 @@ class Landing extends Component {
   }
 
   renderActions() {
+    // State logic: this component does not need React state because these are
+    // stable navigation links. We still build the JSX through a local variable
+    // so old eslint rules do not mistake the JSX after return as unreachable.
+    let actionLinks = null;
+
     try {
-      return (
+      actionLinks = (
         <div className="hero-actions">
           <Link className="hero-button primary" to="/projects">View Projects</Link>
           <Link className="hero-button" to="/resume">View Resume</Link>
@@ -44,8 +49,10 @@ class Landing extends Component {
       );
     } catch (error) {
       console.error('Landing actions failed to render:', error);
-      return <p className="content-error">Resume links are temporarily unavailable.</p>;
+      actionLinks = <p className="content-error">Resume links are temporarily unavailable.</p>;
     }
+
+    return actionLinks;
   }
 
   render() {
