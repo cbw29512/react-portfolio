@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import HomeSections from './homeSections';
 
 // Data schema: the hero profile is separated from the rendering logic so the
 // headline can be adjusted later for analyst, support, automation, or developer roles.
@@ -72,6 +73,7 @@ class Landing extends Component {
               </section>
             </Cell>
           </Grid>
+          <HomeSections />
         </div>
       );
     } catch (error) {
