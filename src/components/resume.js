@@ -9,7 +9,7 @@ class Resume extends Component {
         <article key={`${item.company}-${item.role}`} className="timeline-item">
           <div className="timeline-marker" aria-hidden="true" />
           <div className="timeline-meta">
-            <span>{item.status}</span>
+            <span>{item.dates}</span>
             <p>{item.company}</p>
           </div>
           <div>
@@ -85,7 +85,7 @@ class Resume extends Component {
             </div>
 
             <aside className="credential-panel">
-              <p className="eyebrow">Credentials</p>
+              <p className="eyebrow">Credentials and training</p>
               <h2>Continuous learning with verified foundations.</h2>
               <ul>{this.renderCredentials()}</ul>
               <a className="text-link" href="https://www.credly.com/users/christopherwilson/badges" target="_blank" rel="noopener noreferrer">
