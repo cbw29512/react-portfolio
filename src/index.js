@@ -2,13 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
 import { HashRouter } from 'react-router-dom';
 
-// State logic: GitHub Pages serves static files only. HashRouter keeps all
-// portfolio routes inside the loaded index.html file so direct visits and
-// refreshes do not ask GitHub Pages for a missing /resume or /projects file.
+// State logic: GitHub Pages serves static files only. HashRouter keeps every
+// route inside index.html so direct visits never request a missing static page.
 ReactDOM.render(
   <HashRouter>
     <App />
@@ -18,6 +15,12 @@ ReactDOM.render(
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.getRegistrations().then((registrations) => {
-    registrations.forEach((registration) => registration.unregister());
+    try {
+      registrations.forEach((registration) => registration.unregister());
+    } catch (error) {
+      console.error('Old service workers failed to unregister:', error);
+    }
+  }).catch((error) => {
+    console.error('Service worker registrations could not be read:', error);
   });
 }

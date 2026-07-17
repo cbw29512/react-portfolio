@@ -1,127 +1,114 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
-// Data schema: these sections make the homepage feel more intentional by showing
-// target roles, proof points, and a recruiter-friendly career story.
-const ROLE_TARGETS = [
-  {
-    title: 'Technical / Systems Analyst',
-    description: 'Analyze issues, document repeatable fixes, support production workflows, and communicate clearly across technical teams.'
-  },
-  {
-    title: 'Python Automation Developer',
-    description: 'Build practical scripts, workflow tools, dashboards, and repeatable checks that reduce manual effort and improve reliability.'
-  },
-  {
-    title: 'Support Engineer / App Support',
-    description: 'Troubleshoot complex systems, connect users with answers, and turn messy technical behavior into clear resolution paths.'
-  },
-  {
-    title: 'React / Full-Stack Developer',
-    description: 'Create user-focused web apps with React, JavaScript, HTML, CSS, GitHub delivery, API thinking, and database fundamentals.'
-  }
-];
-
-const PROOF_POINTS = [
-  {
-    metric: 'Enterprise',
-    label: 'IBM z/OS support experience'
-  },
-  {
-    metric: 'Builder',
-    label: 'Python, React, JavaScript, GitHub projects'
-  },
-  {
-    metric: 'Operator',
-    label: 'Troubleshooting, documentation, and production workflows'
-  }
-];
-
-const FEATURED_STORY = {
-  eyebrow: 'What makes this different',
-  title: 'I bridge enterprise support and practical software development.',
-  description: 'My background is not just classroom coding and not just systems support. I understand production reliability, documentation, troubleshooting, and the need for tools that make technical work easier to repeat, explain, and maintain.'
-};
+import { FEATURED_PROJECTS } from '../data/projectData';
+import { PROOF_POINTS, VALUE_PILLARS } from '../data/profileData';
 
 class HomeSections extends Component {
-  renderRoleTargets() {
-    let roleCards = null;
-
-    try {
-      roleCards = ROLE_TARGETS.map((role) => (
-        <article key={role.title} className="value-card">
-          <h3>{role.title}</h3>
-          <p>{role.description}</p>
-        </article>
-      ));
-    } catch (error) {
-      console.error('Homepage role targets failed to render:', error);
-      roleCards = <p className="content-error">Target role details are temporarily unavailable.</p>;
-    }
-
-    return roleCards;
-  }
-
   renderProofPoints() {
-    let proofCards = null;
-
     try {
-      proofCards = PROOF_POINTS.map((point) => (
-        <article key={point.metric} className="proof-card">
-          <strong>{point.metric}</strong>
-          <span>{point.label}</span>
+      return PROOF_POINTS.map((point) => (
+        <article key={point.label} className="proof-card">
+          <p className="proof-label">{point.label}</p>
+          <h3>{point.title}</h3>
+          <p>{point.description}</p>
         </article>
       ));
     } catch (error) {
-      console.error('Homepage proof points failed to render:', error);
-      proofCards = <p className="content-error">Proof points are temporarily unavailable.</p>;
+      console.error('Proof points failed to render:', error);
+      return <p className="content-error">Professional proof is temporarily unavailable.</p>;
     }
-
-    return proofCards;
   }
 
-  renderFeaturedStory() {
-    let story = null;
-
+  renderPillars() {
     try {
-      story = (
-        <section className="feature-band" aria-labelledby="feature-band-title">
-          <div>
-            <p className="eyebrow">{FEATURED_STORY.eyebrow}</p>
-            <h2 id="feature-band-title">{FEATURED_STORY.title}</h2>
-            <p>{FEATURED_STORY.description}</p>
-          </div>
-          <div className="feature-actions">
-            <Link className="hero-button primary" to="/resume">Read Resume</Link>
-            <Link className="hero-button" to="/projects">See Project Proof</Link>
-          </div>
-        </section>
-      );
+      return VALUE_PILLARS.map((pillar) => (
+        <article key={pillar.number} className="pillar-card">
+          <span>{pillar.number}</span>
+          <h3>{pillar.title}</h3>
+          <p>{pillar.description}</p>
+        </article>
+      ));
     } catch (error) {
-      console.error('Homepage featured story failed to render:', error);
-      story = <p className="content-error">Featured story is temporarily unavailable.</p>;
+      console.error('Value pillars failed to render:', error);
+      return <p className="content-error">Solution approach is temporarily unavailable.</p>;
     }
+  }
 
-    return story;
+  renderProjects() {
+    try {
+      return FEATURED_PROJECTS.map((project) => (
+        <article key={project.title} className="featured-project">
+          <div className="project-heading">
+            <span className="project-number">{project.number}</span>
+            <p>{project.category}</p>
+          </div>
+          <h3>{project.title}</h3>
+          <p className="project-summary">{project.summary}</p>
+          <p className="project-value"><strong>Why it matters:</strong> {project.value}</p>
+          <div className="chip-list">
+            {project.stack.map((item) => <span key={item}>{item}</span>)}
+          </div>
+          <div className="project-links">
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                View repository <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            {project.demo && (
+              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                View live project <span aria-hidden="true">↗</span>
+              </a>
+            )}
+          </div>
+        </article>
+      ));
+    } catch (error) {
+      console.error('Featured projects failed to render:', error);
+      return <p className="content-error">Featured work is temporarily unavailable.</p>;
+    }
   }
 
   render() {
     try {
       return (
-        <div className="home-more" aria-label="Career focus and proof">
-          <section className="proof-grid" aria-label="Professional proof points">
-            {this.renderProofPoints()}
+        <div className="home-sections">
+          <section className="section section-tight" aria-labelledby="proof-title">
+            <div className="section-heading">
+              <p className="eyebrow">What I bring</p>
+              <h2 id="proof-title">A rare combination of enterprise experience, builder instincts, and clear communication.</h2>
+            </div>
+            <div className="proof-grid">{this.renderProofPoints()}</div>
           </section>
 
-          {this.renderFeaturedStory()}
-
-          <section className="target-section" aria-labelledby="target-section-title">
-            <div className="project-section-header">
-              <p className="eyebrow">Career Targets</p>
-              <h1 id="target-section-title">Roles this portfolio is built for.</h1>
-              <p>Broad enough to open doors, focused enough to make the value clear.</p>
+          <section className="section approach-section" aria-labelledby="approach-title">
+            <div className="section-heading split-heading">
+              <div>
+                <p className="eyebrow">How I work</p>
+                <h2 id="approach-title">From technical complexity to a usable answer.</h2>
+              </div>
+              <p>Strong solutions start with understanding. They succeed when the people using them understand the value, tradeoffs, and next step.</p>
             </div>
-            <div className="value-grid">{this.renderRoleTargets()}</div>
+            <div className="pillar-grid">{this.renderPillars()}</div>
+          </section>
+
+          <section className="section" aria-labelledby="featured-title">
+            <div className="section-heading split-heading">
+              <div>
+                <p className="eyebrow">Selected work</p>
+                <h2 id="featured-title">Projects that show how I think.</h2>
+              </div>
+              <Link className="text-link" to="/projects">See all projects <span aria-hidden="true">→</span></Link>
+            </div>
+            <div className="featured-grid">{this.renderProjects()}</div>
+          </section>
+
+          <section className="section callout-section" aria-labelledby="callout-title">
+            <div>
+              <p className="eyebrow">The next chapter</p>
+              <h2 id="callout-title">Ready to bring technical depth into a customer-facing solutions role.</h2>
+              <p>I am targeting opportunities where discovery, demos, troubleshooting, relationship-building, and technical credibility work together.</p>
+            </div>
+            <Link className="button button-primary" to="/contact">Start a conversation</Link>
           </section>
         </div>
       );

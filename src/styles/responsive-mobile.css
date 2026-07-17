@@ -1,0 +1,107 @@
+@media (max-width: 760px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .header-inner,
+  .site-footer,
+  .hero-section,
+  .section,
+  .page-hero,
+  .contact-hero {
+    width: min(var(--content), calc(100% - 28px));
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    top: calc(100% + 10px);
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: rgba(7, 17, 31, 0.98);
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav > a {
+    padding: 13px 14px;
+    border-radius: var(--radius-sm);
+  }
+
+  .site-nav > a.is-active:not(.nav-cta) {
+    background: rgba(103, 232, 249, 0.08);
+    box-shadow: none;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 72px 0;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .hero-panel,
+  .callout-section,
+  .case-study-card {
+    padding: 26px;
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+
+  .page-hero,
+  .contact-hero {
+    padding: 82px 0 64px;
+  }
+
+  .lab-grid,
+  .capability-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-card {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-card h2,
+  .case-study-summary,
+  .case-study-detail,
+  .case-study-card .chip-list,
+  .case-study-card .project-links {
+    grid-column: 1;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}

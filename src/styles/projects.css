@@ -1,0 +1,61 @@
+.page-hero,
+.contact-hero {
+  padding: 118px 0 88px;
+}
+
+.page-hero > p,
+.contact-hero > p {
+  max-width: 850px;
+  font-size: 1.15rem;
+}
+
+.case-study-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.case-study-card {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px 56px;
+  padding: 40px;
+}
+
+.case-study-card h2 {
+  grid-column: 1;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+}
+
+.case-study-summary,
+.case-study-detail {
+  grid-column: 2;
+}
+
+.case-study-detail h3 {
+  color: var(--accent);
+  font-size: 0.86rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-study-card .chip-list,
+.case-study-card .project-links {
+  grid-column: 2;
+}
+
+.lab-grid,
+.capability-grid,
+.contact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lab-card,
+.capability-card {
+  padding: 28px;
+}
+
+.lab-card h3,
+.capability-card h3 {
+  font-size: 1.45rem;
+}

@@ -1,0 +1,47 @@
+@media (max-width: 480px) {
+  .hero-actions .button,
+  .callout-section .button {
+    width: 100%;
+  }
+
+  .hero-panel {
+    padding: 22px;
+  }
+
+  .hero-monogram {
+    width: 88px;
+    height: 88px;
+    border-radius: 26px;
+  }
+
+  .proof-card,
+  .pillar-card,
+  .featured-project,
+  .lab-card,
+  .capability-card,
+  .contact-card {
+    padding: 22px;
+  }
+
+  .contact-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .contact-card > span {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

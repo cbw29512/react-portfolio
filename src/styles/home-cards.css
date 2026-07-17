@@ -1,0 +1,125 @@
+.proof-grid,
+.pillar-grid,
+.featured-grid,
+.lab-grid,
+.capability-grid,
+.contact-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.proof-grid,
+.pillar-grid,
+.featured-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.proof-card,
+.pillar-card,
+.featured-project,
+.lab-card,
+.capability-card,
+.contact-card,
+.case-study-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+
+.proof-card,
+.pillar-card {
+  padding: 28px;
+}
+
+.proof-card h3,
+.pillar-card h3 {
+  font-size: 1.35rem;
+}
+
+.pillar-card > span,
+.project-number,
+.case-study-topline > span {
+  color: var(--accent-warm);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.featured-project {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.featured-project:hover {
+  transform: translateY(-6px);
+  border-color: var(--line-strong);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.project-heading,
+.case-study-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-heading p,
+.case-study-topline p {
+  margin-bottom: 0;
+  color: var(--subtle);
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.featured-project h3 {
+  margin: 34px 0 18px;
+  font-size: 2rem;
+}
+
+.project-summary,
+.case-study-summary {
+  color: #d3dfed;
+  font-size: 1.04rem;
+}
+
+.project-value {
+  flex: 1;
+  margin-top: 14px;
+}
+
+.project-value strong {
+  color: var(--text);
+}
+
+.project-links {
+  margin-top: 24px;
+}
+
+.callout-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+  margin-bottom: 104px;
+  padding: 52px;
+  border: 1px solid rgba(103, 232, 249, 0.25);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(103, 232, 249, 0.14), transparent 19rem),
+    var(--surface);
+}
+
+.callout-section h2 {
+  max-width: 820px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.callout-section p {
+  max-width: 780px;
+  margin-bottom: 0;
+}
