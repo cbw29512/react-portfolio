@@ -1,78 +1,71 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import HomeSections from './homeSections';
-
-// Data schema: the hero profile is separated from the rendering logic so the
-// headline can be adjusted later for analyst, support, automation, or developer roles.
-const HERO_PROFILE = {
-  eyebrow: 'Portfolio / Resume',
-  name: 'Chris Wilson',
-  headline: 'Enterprise Systems Analyst | IBM z/OS | Python Automation | React Developer',
-  summary: 'I support enterprise technology environments, troubleshoot complex systems, and build practical software tools that improve documentation, automation, and technical workflows.'
-};
-
-const HERO_SKILLS = [
-  'Enterprise Systems',
-  'Python Automation',
-  'Technical Analysis',
-  'IBM z/OS',
-  'React',
-  'GitHub Pages'
-];
+import { HERO_TAGS, SITE_PROFILE } from '../data/profileData';
 
 class Landing extends Component {
-  renderSkillList() {
+  renderTags() {
     try {
-      return HERO_SKILLS.map((skill) => <span key={skill} className="hero-skill">{skill}</span>);
+      return HERO_TAGS.map((tag) => <span key={tag} className="hero-tag">{tag}</span>);
     } catch (error) {
-      console.error('Landing skill list failed to render:', error);
-      return <span className="hero-skill">Technical Problem Solving</span>;
+      console.error('Hero tags failed to render:', error);
+      return <span className="hero-tag">Technical problem solving</span>;
     }
-  }
-
-  renderActions() {
-    // State logic: this component does not need React state because these are
-    // stable navigation links. We still build the JSX through a local variable
-    // so old eslint rules do not mistake the JSX after return as unreachable.
-    let actionLinks = null;
-
-    try {
-      actionLinks = (
-        <div className="hero-actions">
-          <Link className="hero-button primary" to="/projects">View Projects</Link>
-          <Link className="hero-button" to="/resume">View Resume</Link>
-          <a className="hero-button" href="https://github.com/cbw29512" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a className="hero-button" href="https://www.linkedin.com/in/divclass01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a className="hero-button" href="https://www.credly.com/users/christopherwilson/badges" target="_blank" rel="noopener noreferrer">Credly Badges</a>
-          <a className="hero-button" href="https://www.youracclaim.com/badges/ceb64850-822b-4477-9a6b-d5254d29d10f/public_url" target="_blank" rel="noopener noreferrer">Verify A+</a>
-        </div>
-      );
-    } catch (error) {
-      console.error('Landing actions failed to render:', error);
-      actionLinks = <p className="content-error">Resume links are temporarily unavailable.</p>;
-    }
-
-    return actionLinks;
   }
 
   render() {
     try {
       return (
-        <div className="landing-page">
-          <Grid className="landing-grid">
-            <Cell col={12}>
-              <section className="hero-card">
-                <p className="eyebrow">{HERO_PROFILE.eyebrow}</p>
-                <h1>{HERO_PROFILE.name}</h1>
-                <h2>{HERO_PROFILE.headline}</h2>
-                <p className="hero-copy">{HERO_PROFILE.summary}</p>
+        <div className="page-home">
+          <Helmet>
+            <title>Chris Wilson | Enterprise Technology & Technical Solutions</title>
+            <meta
+              name="description"
+              content="Chris Wilson combines enterprise systems experience, technical troubleshooting, Python automation, and web development with clear solution communication."
+            />
+          </Helmet>
 
-                <div className="hero-skills">{this.renderSkillList()}</div>
-                {this.renderActions()}
-              </section>
-            </Cell>
-          </Grid>
+          <section className="hero-section" aria-labelledby="hero-title">
+            <div className="hero-glow hero-glow-one" aria-hidden="true" />
+            <div className="hero-glow hero-glow-two" aria-hidden="true" />
+
+            <div className="hero-content">
+              <p className="availability-pill">
+                <span aria-hidden="true" />
+                {SITE_PROFILE.availability}
+              </p>
+
+              <p className="eyebrow">{SITE_PROFILE.eyebrow}</p>
+              <h1 id="hero-title">{SITE_PROFILE.headline}</h1>
+              <p className="hero-summary">{SITE_PROFILE.summary}</p>
+
+              <div className="hero-actions">
+                <Link className="button button-primary" to="/projects">Explore my work</Link>
+                <Link className="button button-secondary" to="/resume">View experience</Link>
+              </div>
+
+              <div className="hero-tags" aria-label="Core strengths">
+                {this.renderTags()}
+              </div>
+            </div>
+
+            <aside className="hero-panel" aria-label="Professional focus">
+              <div className="hero-monogram" aria-hidden="true">
+                <span>CW</span>
+              </div>
+              <p className="panel-kicker">Professional focus</p>
+              <h2>Technical discovery, solution design, and confident communication.</h2>
+              <ul className="check-list">
+                <li>Enterprise systems perspective</li>
+                <li>Hands-on software and automation</li>
+                <li>Customer-focused explanations</li>
+                <li>Reliable documentation and follow-through</li>
+              </ul>
+              <p className="panel-location">{SITE_PROFILE.location}</p>
+            </aside>
+          </section>
+
           <HomeSections />
         </div>
       );

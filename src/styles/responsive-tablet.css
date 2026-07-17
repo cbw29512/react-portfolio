@@ -1,0 +1,38 @@
+@media (max-width: 980px) {
+  .hero-section,
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    gap: 48px;
+  }
+
+  .hero-panel {
+    max-width: 720px;
+  }
+
+  .proof-grid,
+  .pillar-grid,
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project {
+    min-height: auto;
+  }
+
+  .split-heading {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .credential-panel {
+    position: static;
+  }
+
+  .callout-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
