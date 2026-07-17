@@ -1,0 +1,15 @@
+{
+  "name": "Chris Wilson | Technical Solutions Portfolio",
+  "short_name": "Chris Wilson",
+  "start_url": "/react-portfolio/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "/react-portfolio/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
