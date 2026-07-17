@@ -6,7 +6,7 @@ export const SITE_PROFILE = {
   headline: 'I turn complex technology into clear, practical solutions.',
   summary: 'Enterprise systems analyst and hands-on builder moving toward sales engineering and solutions consulting. I combine IBM z/OS experience, technical troubleshooting, Python automation, and web development with the ability to explain difficult systems in plain language.',
   availability: 'Open to remote technical solutions opportunities',
-  location: 'South Carolina, United States'
+  location: 'Florence, South Carolina, United States'
 };
 
 export const HERO_TAGS = [
@@ -55,27 +55,27 @@ export const VALUE_PILLARS = [
 
 export const EXPERIENCE = [
   {
-    role: 'Analyst',
+    role: 'Analyst, Mainframe Storage',
     company: 'ICE Mortgage Technology',
-    status: 'Current',
-    description: 'Support enterprise technology environments through issue analysis, troubleshooting, documentation, workflow support, and operational reliability practices.'
+    dates: 'Jan 2025 – Present',
+    description: 'Administer IBM z/OS enterprise storage systems and support infrastructure through issue analysis, troubleshooting, documentation, change support, and operational reliability practices.'
   },
   {
     role: 'Systems Software Programmer',
     company: 'ICE Mortgage Technology',
-    status: 'Previous',
+    dates: 'Jan 2024 – Dec 2024',
     description: 'Developed and maintained systems software in IBM z/OS environments while supporting production workflows, platform updates, issue analysis, and technical documentation.'
   },
   {
     role: 'Systems Software Programmer',
     company: 'Black Knight',
-    status: 'Previous',
+    dates: 'Jun 2021 – Dec 2023',
     description: 'Built and supported enterprise mainframe systems with an emphasis on reliability, maintainability, cross-team communication, and repeatable support processes.'
   },
   {
     role: 'Independent Developer',
     company: 'Technical Projects',
-    status: 'Ongoing',
+    dates: 'Ongoing',
     description: 'Build web applications, automation workflows, local infrastructure projects, and technical demonstrations using Python, JavaScript, React, Linux, Docker, and GitHub.'
   }
 ];
@@ -87,7 +87,7 @@ export const CAPABILITY_GROUPS = [
   },
   {
     title: 'Enterprise Technology',
-    items: ['IBM z/OS', 'JCL', 'Production support', 'Batch operations', 'RACF concepts', 'SDSF concepts', 'Operational reliability']
+    items: ['IBM z/OS', 'JCL', 'Mainframe storage administration', 'Production support', 'Batch operations', 'RACF concepts', 'SDSF concepts', 'Operational reliability']
   },
   {
     title: 'Software & Automation',
@@ -101,11 +101,14 @@ export const CAPABILITY_GROUPS = [
 
 export const CREDENTIALS = [
   'CompTIA A+',
-  'IBM mainframe digital badges',
-  'IBM z/OS Mainframe Apprenticeship Program',
-  'CS50 Web Programming with Python and JavaScript',
-  'Full-Stack Web Development Bootcamp',
-  'Responsive Web Design'
+  'Apprenticeships Champion — Franklin Skills',
+  'IBM z/OS Mainframe Apprenticeship — Franklin Apprenticeship Program',
+  'Interskill — Disk and Tape Storage Foundations',
+  'IBM Development Environment Fundamentals',
+  'z/OS Connect EE Programming Tools',
+  'GDPS Fundamentals — IBM',
+  'z/OS System Services Structure',
+  'Full-Stack Developer Certification — Butler University / Kenzie Academy'
 ];
 
 export const CONTACT_LINKS = [
