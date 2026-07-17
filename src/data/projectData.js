@@ -5,9 +5,9 @@ export const FEATURED_PROJECTS = [
     number: '01',
     category: 'Cybersecurity platform',
     title: 'Wilson Lab',
-    summary: 'An interview-ready cyber lab orchestrator that turns complex lab controls into a safer, operator-friendly experience.',
-    value: 'Demonstrates product thinking through role-based access, audit visibility, safety rails, backend orchestration, and clear demo documentation.',
-    stack: ['React', 'API design', 'Docker', 'RBAC', 'Audit logging'],
+    summary: 'A cyber lab orchestrator currently delivering a React and TypeScript dashboard foundation, with a documented path toward backend control and security enforcement.',
+    value: 'Demonstrates product and platform planning through a working searchable dashboard, versioned documentation, build verification, and a security-aware target architecture for RBAC, audit visibility, and safety rails.',
+    stack: ['React', 'TypeScript', 'GitHub Pages', 'Product documentation', 'Security design'],
     github: 'https://github.com/cbw29512/wilson-lab',
     demo: null
   },
@@ -15,8 +15,8 @@ export const FEATURED_PROJECTS = [
     number: '02',
     category: 'Real-time application',
     title: 'DungeonMaps',
-    summary: 'A local-network battle-map foundation with shared state, API endpoints, token tooling, and a path toward real-time synchronization.',
-    value: 'Shows how I break a broad user need into a maintainable architecture using a lightweight server, SQLite state, WebSocket planning, and smoke tests.',
+    summary: 'A local-network battle-map foundation with shared state, API endpoints, token-tool planning, and a path toward real-time synchronization.',
+    value: 'Shows how I break a broad user need into a maintainable foundation using a lightweight Node server, SQLite state, a WebSocket seam, API endpoints, and smoke tests.',
     stack: ['Node.js', 'SQLite', 'WebSockets', 'REST APIs', 'Testing'],
     github: 'https://github.com/cbw29512/DungeonMaps',
     demo: null
@@ -26,8 +26,8 @@ export const FEATURED_PROJECTS = [
     category: 'Automation operations',
     title: 'OpenClawOps',
     summary: 'A local-first operating workspace for approvals, tasks, logs, research notes, and safe handoffs around automated work.',
-    value: 'Focuses on responsible automation: human review, traceable decisions, clear next actions, and controlled execution before risky steps occur.',
-    stack: ['Workflow design', 'Local-first', 'Approval gates', 'Auditability'],
+    value: 'Focuses on responsible automation: human review, traceable notes, clear next actions, and approval before external or risky steps occur.',
+    stack: ['Workflow design', 'Local-first', 'Approval gates', 'Operational logging'],
     github: 'https://github.com/cbw29512/openclawops',
     demo: null
   }
