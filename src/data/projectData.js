@@ -3,13 +3,13 @@
 export const FEATURED_PROJECTS = [
   {
     number: '01',
-    category: 'Cybersecurity platform',
+    category: 'Secure infrastructure platform',
     title: 'Wilson Lab',
-    summary: 'A cyber lab orchestrator currently delivering a React and TypeScript dashboard foundation, with a documented path toward backend control and security enforcement.',
-    value: 'Demonstrates product and platform planning through a working searchable dashboard, versioned documentation, build verification, and a security-aware target architecture for RBAC, audit visibility, and safety rails.',
-    stack: ['React', 'TypeScript', 'GitHub Pages', 'Product documentation', 'Security design'],
+    summary: 'A security-conscious infrastructure control plane with a live React dashboard, FastAPI backend, Viewer/Admin access, validated inventory, safe container operations, and durable audit history.',
+    value: 'Demonstrates end-to-end product judgment: a public demo that survives API outages, server-enforced authorization, explicit confirmations, allowlisted Docker actions, automated frontend/backend/deployment testing, hardened cloud packaging, and validated Oracle infrastructure as code. The dashboard is live in demo mode while final cloud account and DNS activation remain external steps.',
+    stack: ['React', 'TypeScript', 'FastAPI', 'Python', 'Docker', 'Terraform', 'Oracle Cloud', 'Caddy'],
     github: 'https://github.com/cbw29512/wilson-lab',
-    demo: null
+    demo: 'https://cbw29512.github.io/wilson-lab/'
   },
   {
     number: '02',
