@@ -1,0 +1,32 @@
+name: Portfolio CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - agent/modern-portfolio-redesign
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Build production site
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
+        run: npm run build
