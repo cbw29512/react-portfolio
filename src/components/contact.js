@@ -5,16 +5,26 @@ import { CONTACT_LINKS } from '../data/profileData';
 class Contact extends Component {
   renderContactLinks() {
     try {
-      return CONTACT_LINKS.map((method) => (
-        <a key={method.label} className="contact-card" href={method.href} target="_blank" rel="noopener noreferrer">
-          <i className={method.icon} aria-hidden="true" />
-          <div>
-            <h2>{method.label}</h2>
-            <p>{method.detail}</p>
-          </div>
-          <span aria-hidden="true">↗</span>
-        </a>
-      ));
+      return CONTACT_LINKS.map((method) => {
+        const isExternal = method.href.indexOf('http') === 0;
+
+        return (
+          <a
+            key={method.label}
+            className="contact-card"
+            href={method.href}
+            target={isExternal ? '_blank' : undefined}
+            rel={isExternal ? 'noopener noreferrer' : undefined}
+          >
+            <i className={method.icon} aria-hidden="true" />
+            <div>
+              <h2>{method.label}</h2>
+              <p>{method.detail}</p>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </a>
+        );
+      });
     } catch (error) {
       console.error('Contact methods failed to render:', error);
       return <a className="contact-card" href="mailto:divclass01@gmail.com">Email Chris Wilson</a>;

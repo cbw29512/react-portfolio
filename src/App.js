@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import Main from './components/main';
 import './App.css';
 
@@ -18,6 +18,31 @@ class App extends Component {
     this.state = { isMenuOpen: false };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  componentDidUpdate(previousProps) {
+    try {
+      const routeChanged = previousProps.location.pathname !== this.props.location.pathname;
+
+      if (!routeChanged) {
+        return;
+      }
+
+      window.scrollTo(0, 0);
+
+      if (this.state.isMenuOpen) {
+        this.setState({ isMenuOpen: false });
+      }
+
+      window.requestAnimationFrame(() => {
+        const mainContent = document.getElementById('main-content');
+        if (mainContent) {
+          mainContent.focus();
+        }
+      });
+    } catch (error) {
+      console.error('Route change could not be finalized:', error);
+    }
   }
 
   toggleMenu() {
@@ -80,7 +105,7 @@ class App extends Component {
                 aria-controls="site-navigation"
                 onClick={this.toggleMenu}
               >
-                <span aria-hidden="true">{this.state.isMenuOpen ? 'Close' : 'Menu'}</span>
+                <span>{this.state.isMenuOpen ? 'Close' : 'Menu'}</span>
               </button>
 
               <nav id="site-navigation" className={menuClass} aria-label="Primary navigation">
@@ -90,7 +115,7 @@ class App extends Component {
             </div>
           </header>
 
-          <main id="main-content" tabIndex="-1">
+          <main id="main-content" tabIndex="-1" aria-label="Page content">
             <Main />
           </main>
 
@@ -114,4 +139,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
