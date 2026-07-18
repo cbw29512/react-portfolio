@@ -20,11 +20,18 @@ export const FEATURED_PROJECTS = [
   },
   {
     number: '02',
-    category: 'Real-time application',
+    category: 'Local-first real-time application',
     title: 'DungeonMaps',
-    summary: 'A local-network battle-map foundation with shared state, API endpoints, token-tool planning, and a path toward real-time synchronization.',
-    value: 'Shows how I break a broad user need into a maintainable foundation using a lightweight Node server, SQLite state, a WebSocket seam, API endpoints, and smoke tests.',
-    stack: ['Node.js', 'SQLite', 'WebSockets', 'REST APIs', 'Testing'],
+    summary: 'A responsive tabletop control room that creates real SQLite-backed campaign rooms, monitors the local API and WebSocket seam, and establishes the product foundation for shared maps, tokens, and fog of war.',
+    value: 'Shows how I turn a broad user vision into staged delivery: authoritative state first, a stable API and synchronization contract, then a polished usable dashboard with automated proof across the browser, server, database, and WebSocket layers.',
+    evidence: [
+      '3 integrated smoke suites: dashboard/HTTP, WebSocket, and API/SQLite',
+      'Invalid game-system input rejected before database writes',
+      'CI boots the product against an isolated temporary SQLite database',
+      'Trusted-local-network security boundary documented before remote deployment'
+    ],
+    stack: ['Node.js', 'Express', 'SQLite', 'WebSockets', 'JavaScript', 'GitHub Actions'],
+    caseStudy: 'https://github.com/cbw29512/DungeonMaps/blob/main/docs/CASE_STUDY.md',
     github: 'https://github.com/cbw29512/DungeonMaps',
     demo: null
   },
