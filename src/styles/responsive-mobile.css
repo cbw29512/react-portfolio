@@ -87,9 +87,14 @@
   .case-study-card h2,
   .case-study-summary,
   .case-study-detail,
+  .case-study-evidence,
   .case-study-card .chip-list,
   .case-study-card .project-links {
     grid-column: 1;
+  }
+
+  .case-study-evidence {
+    padding: 18px;
   }
 
   .timeline-item {

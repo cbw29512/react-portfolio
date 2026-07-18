@@ -3,11 +3,18 @@
 export const FEATURED_PROJECTS = [
   {
     number: '01',
-    category: 'Secure infrastructure platform',
+    category: 'Secure infrastructure control plane',
     title: 'Wilson Lab',
-    summary: 'A security-conscious infrastructure control plane with a live React dashboard, FastAPI backend, Viewer/Admin access, validated inventory, safe container operations, and durable audit history.',
-    value: 'Demonstrates end-to-end product judgment: a public demo that survives API outages, server-enforced authorization, explicit confirmations, allowlisted Docker actions, automated frontend/backend/deployment testing, hardened cloud packaging, and validated Oracle infrastructure as code. The dashboard is live in demo mode while final cloud account and DNS activation remain external steps.',
+    summary: 'A security-conscious control plane with a live React dashboard, FastAPI backend, Viewer/Admin access, safe Docker operations, durable audit history, hardened cloud packaging, and Oracle infrastructure as code.',
+    value: 'Shows how I translate privileged infrastructure access into an understandable customer experience: clear demo-versus-live state, server-enforced roles, explicit confirmation, narrow operations, outage-safe behavior, repeatable deployment, and proof that technical and nontechnical stakeholders can review.',
+    evidence: [
+      '3 verification levels: health, read-only, and full operation',
+      '3 allowlisted actions: start, stop, and restart',
+      '34 backend dependencies audited with 0 known vulnerabilities',
+      'Validated OCI Terraform, Caddy configuration, and non-root API image'
+    ],
     stack: ['React', 'TypeScript', 'FastAPI', 'Python', 'Docker', 'Terraform', 'Oracle Cloud', 'Caddy'],
+    caseStudy: 'https://github.com/cbw29512/wilson-lab/blob/main/docs/CASE_STUDY.md',
     github: 'https://github.com/cbw29512/wilson-lab',
     demo: 'https://cbw29512.github.io/wilson-lab/'
   },

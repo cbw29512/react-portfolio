@@ -12,6 +12,26 @@ class Projects extends Component {
     }
   }
 
+  renderEvidence(evidence) {
+    if (!evidence || !evidence.length) {
+      return null;
+    }
+
+    try {
+      return (
+        <div className="case-study-evidence">
+          <h3>Verified evidence</h3>
+          <ul>
+            {evidence.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </div>
+      );
+    } catch (error) {
+      console.error('Project evidence failed to render:', error);
+      return null;
+    }
+  }
+
   renderFeaturedProjects() {
     try {
       return FEATURED_PROJECTS.map((project) => (
@@ -26,16 +46,22 @@ class Projects extends Component {
             <h3>Business and user value</h3>
             <p>{project.value}</p>
           </div>
+          {this.renderEvidence(project.evidence)}
           <div className="chip-list">{this.renderStack(project.stack)}</div>
           <div className="project-links">
-            {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
-                GitHub repository <span aria-hidden="true">↗</span>
+            {project.caseStudy && (
+              <a href={project.caseStudy} target="_blank" rel="noopener noreferrer">
+                Read case study <span aria-hidden="true">↗</span>
               </a>
             )}
             {project.demo && (
               <a href={project.demo} target="_blank" rel="noopener noreferrer">
                 Live project <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            {project.github && (
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                GitHub repository <span aria-hidden="true">↗</span>
               </a>
             )}
           </div>
