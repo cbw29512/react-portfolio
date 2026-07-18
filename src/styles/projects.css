@@ -28,20 +28,43 @@
 }
 
 .case-study-summary,
-.case-study-detail {
+.case-study-detail,
+.case-study-evidence {
   grid-column: 2;
 }
 
-.case-study-detail h3 {
+.case-study-detail h3,
+.case-study-evidence h3 {
   color: var(--accent);
   font-size: 0.86rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
+.case-study-evidence {
+  padding: 20px 22px;
+  border: 1px solid rgba(103, 232, 249, 0.16);
+  border-radius: var(--radius-md);
+  background: rgba(103, 232, 249, 0.045);
+}
+
+.case-study-evidence ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: #c7d7ea;
+}
+
 .case-study-card .chip-list,
 .case-study-card .project-links {
   grid-column: 2;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
 }
 
 .lab-grid,
