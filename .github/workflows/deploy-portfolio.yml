@@ -25,15 +25,16 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '22'
+          cache: npm
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps --no-fund --no-audit
+      - name: Install locked dependencies
+        run: npm ci --legacy-peer-deps --no-fund --no-audit
 
       - name: Run portfolio regressions
         run: npm test
 
       - name: Audit dependency tree
-        run: npm audit --audit-level=high
+        run: npm audit --audit-level=low
 
       - name: Build production site
         run: npm run build
