@@ -47,7 +47,7 @@ export const FEATURED_PROJECTS = [
     ],
     stack: ['JavaScript', 'Static web apps', 'Print workflows', 'Automated regression tests', 'GitHub Pages'],
     github: 'https://github.com/cbw29512/DNDCards',
-    demo: null
+    demo: 'https://cbw29512.github.io/DNDCards/'
   }
 ];
 
@@ -72,5 +72,19 @@ export const ADDITIONAL_PROJECTS = [
     summary: 'A tabletop character-management application being migrated from a hardened Flask reference implementation to a Netlify, Functions, and Postgres architecture with secure sessions, authorization, migrations, accessibility checks, and print support.',
     stack: ['Python', 'Flask', 'Node.js', 'Postgres', 'Netlify Functions', 'WCAG testing'],
     github: 'https://github.com/cbw29512/CharacterForge'
+  },
+  {
+    title: 'Web Stream Optimizer',
+    category: 'Browser extension engineering',
+    summary: 'A Manifest V3 browser extension that combines local DOM heuristics, declarative network rules, a maintained blocklist, privacy-conscious local state, and deterministic Chrome Web Store packaging.',
+    stack: ['JavaScript', 'Chrome MV3', 'declarativeNetRequest', 'Chromium testing', 'GitHub Actions'],
+    github: 'https://github.com/cbw29512/optimizer-dist'
+  },
+  {
+    title: 'StudyHub',
+    category: 'Local-first learning tool',
+    summary: 'A browser-based study workspace with certification-oriented decks, a fast card builder, local browser persistence, JSON export, learning-project tracking, and static GitHub Pages delivery.',
+    stack: ['HTML', 'CSS', 'JavaScript', 'localStorage', 'GitHub Pages'],
+    github: 'https://github.com/cbw29512/StudyHub'
   }
 ];
