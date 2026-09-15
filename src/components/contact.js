@@ -37,7 +37,7 @@ class Contact extends Component {
         <div className="page page-contact">
           <Helmet>
             <title>Contact Chris Wilson</title>
-            <meta name="description" content="Contact Chris Wilson about sales engineering, solutions consulting, technical account management, enterprise systems, automation, or customer-facing technology opportunities." />
+            <meta name="description" content="Contact Chris Wilson about software engineering, enterprise systems, Python automation, infrastructure, technical solutions, or remote technology opportunities." />
           </Helmet>
 
           <section className="contact-hero">
@@ -46,8 +46,8 @@ class Contact extends Component {
               Open to remote opportunities
             </p>
             <p className="eyebrow">Let&apos;s connect</p>
-            <h1>Looking for someone who can understand the technology and explain the value?</h1>
-            <p>I am interested in customer-facing technical roles where discovery, troubleshooting, demonstrations, communication, and relationship-building come together.</p>
+            <h1>Looking for someone who can troubleshoot complex systems and build practical solutions?</h1>
+            <p>I am interested in remote technical roles where software, automation, enterprise systems, troubleshooting, and clear communication come together.</p>
             <a className="button button-primary" href="mailto:divclass01@gmail.com">Email Chris</a>
           </section>
 
