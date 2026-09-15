@@ -26,6 +26,12 @@ jobs:
       - name: Install locked dependencies
         run: npm ci --legacy-peer-deps
 
+      - name: Run portfolio regressions
+        env:
+          CI: true
+          NODE_OPTIONS: --openssl-legacy-provider
+        run: npm test -- --runInBand
+
       - name: Build production site
         env:
           NODE_OPTIONS: --openssl-legacy-provider
