@@ -1,77 +1,76 @@
 // Data schema: each project states the problem, approach, value, and evidence.
-// This mirrors the case-study structure used by strong technical portfolios.
+// Keeping project content separate from rendering makes future updates safer.
 export const FEATURED_PROJECTS = [
   {
     number: '01',
-    category: 'Secure infrastructure control plane',
-    title: 'Wilson Lab',
-    summary: 'A security-conscious control plane with a live React dashboard, FastAPI backend, Viewer/Admin access, safe Docker operations, durable audit history, hardened cloud packaging, and Oracle infrastructure as code.',
-    value: 'Shows how I translate privileged infrastructure access into an understandable customer experience: clear demo-versus-live state, server-enforced roles, explicit confirmation, narrow operations, outage-safe behavior, repeatable deployment, and proof that technical and nontechnical stakeholders can review.',
+    category: 'Rules-driven simulation engine',
+    title: 'D20 Iron Pit',
+    summary: 'A browser-based D&D 2024 combat simulator built around a universal rules engine, immutable source cards, fresh per-fight state, deterministic replay, and auditable combat evidence.',
+    value: 'Shows how I design a complex rules system without relying on one-off fixes: mechanics are implemented once, certified against source data, verified in both Python and the browser, and exposed through repeatable Step, Watch, Replay, and Turbo workflows.',
     evidence: [
-      '3 verification levels: health, read-only, and full operation',
-      '3 allowlisted actions: start, stop, and restart',
-      '34 backend dependencies audited with 0 known vulnerabilities',
-      'Validated OCI Terraform, Caddy configuration, and non-root API image'
+      'Canonical SRD catalog covers exactly 330 monsters',
+      'Hero architecture supports 12 persistent classes across levels 1–20',
+      'Python remains the reference/certification oracle while production fights run in-browser',
+      'Exact-head CI, browser parity, generated manifests, and rules audits gate certification'
     ],
-    stack: ['React', 'TypeScript', 'FastAPI', 'Python', 'Docker', 'Terraform', 'Oracle Cloud', 'Caddy'],
-    caseStudy: 'https://github.com/cbw29512/wilson-lab/blob/main/docs/CASE_STUDY.md',
-    github: 'https://github.com/cbw29512/wilson-lab',
-    demo: 'https://cbw29512.github.io/wilson-lab/'
+    stack: ['Python', 'JavaScript', 'HTML/CSS', 'GitHub Actions', 'Rules engine design', 'Automated testing'],
+    github: 'https://github.com/cbw29512/D20-ironpit',
+    demo: 'https://cbw29512.github.io/D20-ironpit/'
   },
   {
     number: '02',
-    category: 'Local-first real-time application',
-    title: 'DungeonMaps',
-    summary: 'A responsive tabletop control room that creates real SQLite-backed campaign rooms, monitors the local API and WebSocket seam, and establishes the product foundation for shared maps, tokens, and fog of war.',
-    value: 'Shows how I turn a broad user vision into staged delivery: authoritative state first, a stable API and synchronization contract, then a polished usable dashboard with automated proof across the browser, server, database, and WebSocket layers.',
+    category: 'Offline-first product design',
+    title: 'TomeForge',
+    summary: 'An installable local-first digital tabletop journal with class-specific player tomes, a DM campaign chronicle, immutable page layouts, IndexedDB persistence, explicit backup/restore, and offline application caching.',
+    value: 'Shows product architecture built around user ownership and resilience: the journal works without an account or cloud database, preserves created page structures over time, and keeps backup and restore under explicit user control.',
     evidence: [
-      '3 integrated smoke suites: dashboard/HTTP, WebSocket, and API/SQLite',
-      'Invalid game-system input rejected before database writes',
-      'CI boots the product against an isolated temporary SQLite database',
-      'Trusted-local-network security boundary documented before remote deployment'
+      'Canonical local model separates journal pages, fields, and user values',
+      'IndexedDB stores journal content on the user device only',
+      'Service worker caches the static application shell for offline use',
+      'Regression checks cover model behavior, static smoke tests, tome flows, and crest assets'
     ],
-    stack: ['Node.js', 'Express', 'SQLite', 'WebSockets', 'JavaScript', 'GitHub Actions'],
-    caseStudy: 'https://github.com/cbw29512/DungeonMaps/blob/main/docs/CASE_STUDY.md',
-    github: 'https://github.com/cbw29512/DungeonMaps',
+    stack: ['JavaScript', 'IndexedDB', 'PWA', 'Service Workers', 'Local-first architecture', 'Regression testing'],
+    github: null,
     demo: null
   },
   {
     number: '03',
-    category: 'Automation operations',
-    title: 'OpenClawOps',
-    summary: 'A local-first operating workspace for approvals, tasks, logs, research notes, and safe handoffs around automated work.',
-    value: 'Focuses on responsible automation: human review, traceable notes, clear next actions, and approval before external or risky steps occur.',
-    stack: ['Workflow design', 'Local-first', 'Approval gates', 'Operational logging'],
-    github: 'https://github.com/cbw29512/openclawops',
+    category: 'Tabletop product platform',
+    title: 'Dungeon Cards',
+    summary: 'A standalone card-based tabletop adventure platform with a reusable card library, digital DM/player table, combat and initiative helpers, printable cards, and level-ready hero packs.',
+    value: 'Shows how I turn a broad product idea into a testable, deployable system with a defined production boundary, reusable content, browser-based play, print support, and one canonical quality gate for regression and build verification.',
+    evidence: [
+      'One canonical npm test command runs every regression and library validator',
+      'Production builds generate a clean deployable _site artifact',
+      'GitHub Pages deploys the same artifact that passes the repository checks',
+      'The production baseline is kept separate from experimental expansion work'
+    ],
+    stack: ['JavaScript', 'Static web apps', 'Print workflows', 'Automated regression tests', 'GitHub Pages'],
+    github: 'https://github.com/cbw29512/DNDCards',
     demo: null
   }
 ];
 
 export const ADDITIONAL_PROJECTS = [
   {
-    title: 'WatchPi Network Appliance',
-    category: 'Infrastructure',
-    summary: 'A Raspberry Pi appliance plan for network-wide DNS filtering, lightweight monitoring, honeypot services, SSH administration, and reliable 24/7 operation.',
-    stack: ['Ubuntu Server', 'Raspberry Pi', 'Networking', 'Security']
+    title: 'Wilson Lab',
+    category: 'Secure infrastructure control plane',
+    summary: 'A React and FastAPI control plane for safe Docker operations with server-enforced roles, audit history, hardened packaging, and infrastructure-as-code deployment work.',
+    stack: ['React', 'TypeScript', 'FastAPI', 'Python', 'Docker', 'Terraform'],
+    github: 'https://github.com/cbw29512/wilson-lab'
   },
   {
-    title: 'Network Command Center',
-    category: 'Local AI / networking',
-    summary: 'A passive network-observability concept that combines mirrored traffic, device inventory, DNS context, and AI-generated summaries without sitting inline or automatically blocking traffic.',
-    stack: ['Docker', 'Packet analysis', 'Local AI', 'Observability']
+    title: 'NetGuard SOC',
+    category: 'Security engineering lab',
+    summary: 'A reproducible Ubuntu security-operations lab for telemetry collection, sensors, dashboards, SOC workflows, AI-assisted experiments, and enterprise-style Docker services.',
+    stack: ['Python', 'Docker', 'Linux', 'Security monitoring', 'Grafana', 'InfluxDB'],
+    github: 'https://github.com/cbw29512/netguard-soc'
   },
   {
-    title: 'Local AI Workstation Gear',
-    category: 'Research workflow',
-    summary: 'A structured research and review workflow for local-AI workstation equipment with candidate queues, human approval gates, and safer publishing controls.',
-    stack: ['Research systems', 'Data organization', 'Review workflows'],
-    github: 'https://github.com/cbw29512/local-ai-workstation-gear'
-  },
-  {
-    title: 'HeavyClaw Avatar',
-    category: 'Marketing technology',
-    summary: 'A static service website exploring how an AI automation agent could package SEO, content, lead-generation, landing-page, and data services.',
-    stack: ['HTML', 'CSS', 'Service design', 'Marketing automation'],
-    github: 'https://github.com/cbw29512/heavyclaw-avatar'
+    title: 'CharacterForge',
+    category: 'Full-stack application modernization',
+    summary: 'A tabletop character-management application being migrated from a hardened Flask reference implementation to a Netlify, Functions, and Postgres architecture with secure sessions, authorization, migrations, accessibility checks, and print support.',
+    stack: ['Python', 'Flask', 'Node.js', 'Postgres', 'Netlify Functions', 'WCAG testing'],
+    github: 'https://github.com/cbw29512/CharacterForge'
   }
 ];
