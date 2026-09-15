@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '22'
-          cache: npm
 
       - name: Install dependencies
         run: npm install --no-fund --no-audit
@@ -29,7 +28,7 @@ jobs:
       - name: Run portfolio regressions
         run: npm test
 
-      - name: Audit production dependency tree
+      - name: Audit dependency tree
         run: npm audit --audit-level=high
 
       - name: Build production site
