@@ -104,9 +104,9 @@ class HomeSections extends Component {
 
           <section className="section callout-section" aria-labelledby="callout-title">
             <div>
-              <p className="eyebrow">The next chapter</p>
-              <h2 id="callout-title">Ready to bring technical depth into a customer-facing solutions role.</h2>
-              <p>I am targeting opportunities where discovery, demos, troubleshooting, relationship-building, and technical credibility work together.</p>
+              <p className="eyebrow">Next opportunity</p>
+              <h2 id="callout-title">Ready to bring enterprise reliability and hands-on software engineering to the next technical challenge.</h2>
+              <p>I am interested in roles where systems thinking, coding, automation, troubleshooting, and clear communication produce reliable outcomes.</p>
             </div>
             <Link className="button button-primary" to="/contact">Start a conversation</Link>
           </section>
