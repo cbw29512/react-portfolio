@@ -2,19 +2,19 @@
 // Keeping content separate from rendering makes future role-specific versions safer.
 export const SITE_PROFILE = {
   name: 'Chris Wilson',
-  eyebrow: 'Enterprise technology + customer-focused problem solving',
+  eyebrow: 'Enterprise systems + software engineering + practical problem solving',
   headline: 'I turn complex technology into clear, practical solutions.',
-  summary: 'Enterprise systems analyst and hands-on builder moving toward sales engineering and solutions consulting. I combine IBM z/OS experience, technical troubleshooting, Python automation, and web development with the ability to explain difficult systems in plain language.',
-  availability: 'Open to remote technical solutions opportunities',
+  summary: 'Enterprise systems analyst and hands-on software builder with IBM z/OS experience, technical troubleshooting, Python automation, and web development. I build practical tools, improve workflows, and explain complex systems clearly.',
+  availability: 'Open to remote software, systems, automation, and technical solutions opportunities',
   location: 'Florence, South Carolina, United States'
 };
 
 export const HERO_TAGS = [
   'Enterprise systems',
-  'Technical discovery',
-  'Solution communication',
+  'Software engineering',
   'Python automation',
-  'Customer-focused support'
+  'Technical troubleshooting',
+  'Clear communication'
 ];
 
 export const PROOF_POINTS = [
