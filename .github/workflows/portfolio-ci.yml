@@ -23,7 +23,7 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install --no-fund --no-audit
+        run: npm install --legacy-peer-deps --no-fund --no-audit
 
       - name: Run portfolio regressions
         run: npm test
