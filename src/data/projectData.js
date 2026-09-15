@@ -5,13 +5,13 @@ export const FEATURED_PROJECTS = [
     number: '01',
     category: 'Rules-driven simulation engine',
     title: 'D20 Iron Pit',
-    summary: 'A browser-based D&D 2024 combat simulator built around a universal rules engine, immutable source cards, fresh per-fight state, deterministic replay, and auditable combat evidence.',
+    summary: 'A browser-based D&D combat simulator built around a universal rules engine, immutable source cards, fresh per-fight state, deterministic replay, and auditable combat evidence.',
     value: 'Shows how I design a complex rules system without relying on one-off fixes: mechanics are implemented once, certified against source data, verified in both Python and the browser, and exposed through repeatable Step, Watch, Replay, and Turbo workflows.',
     evidence: [
-      'Canonical SRD catalog covers exactly 330 monsters',
-      'Hero architecture supports 12 persistent classes across levels 1–20',
-      'Python remains the reference/certification oracle while production fights run in-browser',
-      'Exact-head CI, browser parity, generated manifests, and rules audits gate certification'
+      'Source-driven monster and hero data is promoted through explicit certification manifests',
+      'Universal mechanics are implemented once instead of adding monster-specific resolver branches',
+      'Python remains the reference and certification oracle while production fights run in-browser',
+      'Exact-head CI, browser parity, generated artifacts, and rules audits gate supported combat behavior'
     ],
     stack: ['Python', 'JavaScript', 'HTML/CSS', 'GitHub Actions', 'Rules engine design', 'Automated testing'],
     github: 'https://github.com/cbw29512/D20-ironpit',
