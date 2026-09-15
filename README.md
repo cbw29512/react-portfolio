@@ -1,6 +1,6 @@
 # Chris Wilson Portfolio
 
-Modern, responsive portfolio for Chris Wilson, focused on enterprise technology, technical solutions, sales engineering, solutions consulting, and customer-facing technical work.
+Modern, responsive portfolio for Chris Wilson, focused on enterprise systems, software engineering, automation, technical solutions, and practical problem solving.
 
 ## Live site
 
@@ -8,12 +8,13 @@ https://cbw29512.github.io/react-portfolio/
 
 ## Current experience
 
-- Focused value proposition and recruiter-friendly navigation
-- Featured technical case studies with user and business context
+- Recruiter-friendly navigation and broad technical positioning
+- Featured technical case studies with user, architecture, and business context
 - Enterprise experience timeline and verified training
 - Responsive layouts for desktop, tablet, and mobile
 - Keyboard focus indicators, skip navigation, semantic headings, and reduced-motion support
 - Per-route titles and descriptions through React Helmet
+- Regression tests for every route, project data, contact data, and public-link structure
 - Automated production build and GitHub Pages deployment
 
 ## Architecture
@@ -32,24 +33,28 @@ npm ci --legacy-peer-deps
 npm start
 ```
 
-## Production build
+## Verification
 
 ```bash
+CI=true NODE_OPTIONS=--openssl-legacy-provider npm test -- --runInBand
 NODE_OPTIONS=--openssl-legacy-provider npm run build
 ```
 
 On Windows PowerShell:
 
 ```powershell
+$env:CI='true'
 $env:NODE_OPTIONS='--openssl-legacy-provider'
+npm test -- --runInBand
 npm run build
 ```
 
 ## Deployment
 
 - Pull requests run `.github/workflows/portfolio-ci.yml`.
+- CI must pass route/data regressions and the production build before merge.
 - Merges to `master` run `.github/workflows/deploy-portfolio.yml`.
-- The deployment workflow builds the production bundle and publishes it to the `gh-pages` branch.
+- Deployment reruns the same regression tests before building and publishing the `gh-pages` branch.
 
 ## Known modernization work
 
