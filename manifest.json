@@ -1,5 +1,5 @@
 {
-  "name": "Chris Wilson | Technical Solutions Portfolio",
+  "name": "Chris Wilson | Software, Systems & Automation",
   "short_name": "Chris Wilson",
   "start_url": "/react-portfolio/",
   "display": "standalone",
@@ -9,7 +9,7 @@
     {
       "src": "/react-portfolio/favicon.ico",
       "sizes": "32x32",
-      "type": "image/png"
+      "type": "image/x-icon"
     }
   ]
 }
