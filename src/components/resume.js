@@ -60,18 +60,18 @@ class Resume extends Component {
         <div className="page page-resume">
           <Helmet>
             <title>Experience & Capabilities | Chris Wilson</title>
-            <meta name="description" content="Chris Wilson's enterprise systems experience, technical capabilities, credentials, and transition toward sales engineering and solutions consulting." />
+            <meta name="description" content="Chris Wilson's enterprise systems experience, software and automation capabilities, technical credentials, and production-focused engineering background." />
           </Helmet>
 
           <section className="page-hero resume-hero">
             <p className="eyebrow">Experience and capabilities</p>
-            <h1>Enterprise reliability, modern software skills, and a customer-focused next step.</h1>
-            <p>My background connects production support, systems programming, practical development, and clear technical communication. I am now applying that foundation to solutions-oriented roles.</p>
-            <div className="target-role-row" aria-label="Target roles">
-              <span>Sales Engineer</span>
-              <span>Solutions Consultant</span>
-              <span>Technical Account Manager</span>
-              <span>Customer-facing technical roles</span>
+            <h1>Enterprise reliability, hands-on software engineering, and practical problem solving.</h1>
+            <p>My background connects production support, systems programming, software development, automation, and clear technical communication. I bring that foundation to roles where reliable systems and useful software matter.</p>
+            <div className="target-role-row" aria-label="Professional focus areas">
+              <span>Software Engineering</span>
+              <span>Systems Engineering</span>
+              <span>Automation & Platform Work</span>
+              <span>Technical Solutions</span>
             </div>
           </section>
 
