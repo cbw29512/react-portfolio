@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { CONTACT_LINKS } from './profileData';
 import { ADDITIONAL_PROJECTS, FEATURED_PROJECTS } from './projectData';
 
