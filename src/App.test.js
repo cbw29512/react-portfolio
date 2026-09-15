@@ -16,8 +16,11 @@ ROUTES.forEach((route) => {
         </MemoryRouter>,
         div
       );
-    } finally {
-      ReactDOM.unmountComponentAtNode(div);
+
+      expect(div.innerHTML.length).toBeGreaterThan(0);
+    } catch (error) {
+      console.error(`Route smoke test failed for ${route}:`, error);
+      throw error;
     }
   });
 });
