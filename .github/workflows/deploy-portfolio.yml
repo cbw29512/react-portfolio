@@ -24,21 +24,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
 
-      - name: Install locked dependencies
-        run: npm ci --legacy-peer-deps
+      - name: Install dependencies
+        run: npm install --no-fund --no-audit
 
       - name: Run portfolio regressions
-        env:
-          CI: true
-          NODE_OPTIONS: --openssl-legacy-provider
-        run: npm test -- --runInBand
+        run: npm test
+
+      - name: Audit production dependency tree
+        run: npm audit --audit-level=high
 
       - name: Build production site
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
         run: npm run build
 
       - name: Publish GitHub Pages branch
